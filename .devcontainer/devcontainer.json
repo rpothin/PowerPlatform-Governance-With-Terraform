@@ -21,7 +21,8 @@
             "ms-azuretools.vscode-azureterraform",
             "yzhang.markdown-all-in-one",
             "microsoft-IsvExpTools.powerplatform-vscode",
-            "ms-dotnettools.dotnet-interactive-vscode"
+            "ms-dotnettools.dotnet-interactive-vscode",
+            "ms-azuretools.vscode-bicep"
         ],
         "settings": {
           "terraform.languageServer": {

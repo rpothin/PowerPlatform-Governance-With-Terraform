@@ -1,0 +1,36 @@
+{
+    "name": "Terraform",
+    "image": "mcr.microsoft.com/devcontainers/dotnet:1-8.0-bookworm",
+    "features": {
+      "ghcr.io/devcontainers/features/terraform": {
+        "version": "latest"
+      },
+      "ghcr.io/devcontainers/features/azure-cli": {
+        "version": "latest"
+      },
+      "ghcr.io/devcontainers-contrib/features/gh-cli": {
+        "version": "latest"
+      }
+    },
+    "customizations": {
+      "vscode": {
+        "extensions": [
+            "hashicorp.terraform",
+            "github.copilot",
+            "github.vscode-github-actions",
+            "ms-azuretools.vscode-azureterraform",
+            "yzhang.markdown-all-in-one",
+            "microsoft-IsvExpTools.powerplatform-vscode",
+            "ms-dotnettools.dotnet-interactive-vscode"
+        ],
+        "settings": {
+          "terraform.languageServer": {
+            "enabled": true,
+            "args": [
+              "serve"
+            ]
+          }
+        }
+      }
+    }
+  }

@@ -35,7 +35,7 @@ The goal is to see if the Terraform provider can be effectively used to automate
 #### Service principal
 
 > [!NOTE]
-> From what I found, the [Creating an App Registration to use the Power Platform Provider](https://microsoft.github.io/terraform-provider-power-platform/guides/app_registration/) page in the documentation of the Terraform provider for Power Platform is the reference regarding how the service principal should be configured.
+> From what I found, the [Creating an App Registration to use the Power Platform Provider](https://microsoft.github.io/terraform-provider-power-platform/guides/app_registration/) page in the documentation of the Terraform provider for Power Platform is the reference regarding how the application registration should be configured.
 
 1. Create an application registration in [Entra ID](https://entra.microsoft.com/#view/Microsoft_AAD_RegisteredApps/ApplicationsListBlade)
 2. Once the application registration is created, go to `API Permissions`

@@ -30,7 +30,48 @@ The goal is to see if the Terraform provider can be effectively used to automate
 
 #### Azure Resource Group for Terraform state
 
+The Bicep infrastructure as code that need to be deployed to manage the Terraform state files related to our Terraform infrastructure as code for Power Platform governance is located in the [src/terraform-state-iac](./src/terraform-state-iac/) folder.
 
+To deploy it, you can follow one of the options below.
+
+##### Option 1: Using the deployment pane from the VS Code extension
+
+From VS Code, with the Bicep extension installed,
+1. Right-click on the `main.bicep` file under [src/terraform-state-iac](./src/terraform-state-iac/)
+2. Select `Show deployment pane`
+3. In the deployment pane, click on the `Pick Scope` button
+4. Sign in to Azure
+5. Select the Azure subscription where you want to deploy the resources
+6. Enter the values for the different parameters
+7. Click on the `Validate` button to validate the Bicep file combined with the parameters
+8. Click on the `What-If` button to see what resources will be deployed
+9. Click on the `Deploy` button to deploy the resources
+
+##### Option 2: Using the Azure CLI
+
+1. Update the `main.bicepparam` file with the values you want to use.
+2. In a terminal positioned in the [src/terraform-state-iac](./src/terraform-state-iac/) folder, run the following commands:
+
+```shell
+# Install the Bicep CLI
+az bicep install
+az bicep version
+
+# Connect to Azure
+az login
+
+# Set the subscription
+az account set --subscription "Your Subscription Name"
+
+# Validate the Bicep file and parameters
+az deployment sub validate --location "Your Location" --template-file main.bicep --parameters main.bicepparam
+
+# Check the impact of the deployment
+az deployment sub what-if --location "Your Location" --template-file main.bicep --parameters main.bicepparam
+
+# Deploy the resources
+az deployment sub create --location "Your Location" --template-file main.bicep --parameters main.bicepparam
+```
 
 #### Service principal
 

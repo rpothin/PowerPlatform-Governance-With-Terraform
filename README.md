@@ -30,7 +30,7 @@ The goal is to see if the Terraform provider can be effectively used to automate
 
 #### Azure Resource Group for Terraform state
 
-The Bicep infrastructure as code that need to be deployed to manage the Terraform state files related to our Terraform infrastructure as code for Power Platform governance is located in the [src/terraform-state-iac](./src/terraform-state-iac/) folder.
+The Bicep infrastructure as code that need to be deployed to manage the Terraform state files related to our Terraform configurations for Power Platform governance is located in the [src/terraform-state-iac](./src/terraform-state-iac/) folder.
 
 To deploy it, you can follow one of the options below.
 
@@ -100,6 +100,9 @@ az deployment sub create --location "Your Location" --template-file main.bicep -
 > Add-PowerAppsAccount
 > New-PowerAppManagementApp -ApplicationId 00000000-0000-0000-0000-000000000000
 ```
+
+6. In the considered Azure subscription, assign the `Contributor` role to the application registration
+7. Configure your application registration for an [authentication with OIDC](https://microsoft.github.io/terraform-provider-power-platform/#authenticating-to-power-platform-using-a-service-principal-with-oidc) in your GitHub repository
 
 ## 💡 Ideas
 

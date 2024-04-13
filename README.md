@@ -34,8 +34,11 @@ The goal is to see if the Terraform provider can be effectively used to automate
 
 #### Service principal
 
+> [!NOTE]
+> From what I found, the [Creating an App Registration to use the Power Platform Provider](https://microsoft.github.io/terraform-provider-power-platform/guides/app_registration/) page in the documentation of the Terraform provider for Power Platform is the reference regarding how the service principal should be configured.
+
 1. Create an application registration in [Entra ID](https://entra.microsoft.com/#view/Microsoft_AAD_RegisteredApps/ApplicationsListBlade)
-2. Once the application registration is created, go to the `API Permissions` page
+2. Once the application registration is created, go to `API Permissions`
 3. Add the following permissions
 
 - Dynamics CRM | user_impersonation
@@ -49,12 +52,14 @@ The goal is to see if the Terraform provider can be effectively used to automate
 > [!NOTE]
 > If you don't find the `Power Platform API` API permission, you can follow [this documentation](https://learn.microsoft.com/en-us/power-platform/admin/programmability-authentication-v2#step-2-configure-api-permissions).
 
-4. Run the [**New-PowerAppManagementApp**](https://docs.microsoft.com/en-us/powershell/module/microsoft.powerapps.administration.powershell/new-powerappmanagementapp) PowerShell command of the [**Microsoft.PowerApps.Administration.PowerShell**](https://docs.microsoft.com/en-us/powershell/module/microsoft.powerapps.administration.powershell) PowerShell module specifying the **Application (client) ID** of the app registration created in the previous step
+4. Under `Expose an API`, add the documented configuration
+5. Run the [**New-PowerAppManagementApp**](https://docs.microsoft.com/en-us/powershell/module/microsoft.powerapps.administration.powershell/new-powerappmanagementapp) PowerShell command of the [**Microsoft.PowerApps.Administration.PowerShell**](https://docs.microsoft.com/en-us/powershell/module/microsoft.powerapps.administration.powershell) PowerShell module specifying the **Application (client) ID** of the app registration created in the previous step
 
 ```shell
 > Add-PowerAppsAccount
 > New-PowerAppManagementApp -ApplicationId 00000000-0000-0000-0000-000000000000
 ```
+
 ## 💡 Ideas
 
 - [ ] Automate the workspace setup using a Polyglot Notebook - _allowing to combine code and documentation in the same place_

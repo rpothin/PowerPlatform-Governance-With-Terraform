@@ -89,7 +89,7 @@ resource "powerplatform_data_loss_prevention_policy" "my_policy" {
   display_name                      = "Block All Policy"
   default_connectors_classification = "Blocked"
   environment_type                  = "OnlyEnvironments"
-  environments                      = []
+  environments                      = ["Default-7e7df62f-7cc4-4e63-a250-a277063e1be7"]
 
   business_connectors     = local.business_connectors
   non_business_connectors = local.non_business_connectors

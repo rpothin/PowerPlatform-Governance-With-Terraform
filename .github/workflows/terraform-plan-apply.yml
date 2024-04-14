@@ -6,8 +6,11 @@ on:
   workflow_dispatch:
     inputs:
       terraform_configuration:
+        type: choice
         description: 'The name of the Terraform configuration to plan and apply'
         required: true
+        options:
+          - dlp-policies
 
 # Concurrency configuration for the current workflow - Keep only the latest workflow queued for the considered group
 concurrency:

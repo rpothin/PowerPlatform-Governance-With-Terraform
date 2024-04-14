@@ -88,7 +88,7 @@ locals {
 resource "powerplatform_data_loss_prevention_policy" "my_policy" {
   display_name                      = "Block All Policy"
   default_connectors_classification = "Blocked"
-  environment_type                  = "AllEnvironments"
+  environment_type                  = "OnlyEnvironments"
   environments                      = []
 
   business_connectors     = local.business_connectors

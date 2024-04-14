@@ -1,0 +1,9 @@
+provider_installation {
+  filesystem_mirror {
+    path    = "/usr/share/terraform/providers"
+    include = ["microsoft/power-platform"]
+  }
+  direct {
+    exclude = ["microsoft/power-platform"]
+  }
+}

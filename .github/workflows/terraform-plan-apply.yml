@@ -41,6 +41,7 @@ jobs:
     env:
       #this is needed since we are running terraform with read-only permissions
       ARM_SKIP_PROVIDER_REGISTRATION: true
+      TF_CLI_CONFIG_FILE: ${{ github.workspace }}/src/mirror.tfrc
     outputs:
       tfplanExitCode: ${{ steps.tf-plan.outputs.exitcode }}
     
@@ -138,6 +139,7 @@ jobs:
     env:
       #this is needed since we are running terraform with read-only permissions
       ARM_SKIP_PROVIDER_REGISTRATION: true
+      TF_CLI_CONFIG_FILE: ${{ github.workspace }}/src/mirror.tfrc
 
     steps:
       # Action used to checkout the main branch in the current repository

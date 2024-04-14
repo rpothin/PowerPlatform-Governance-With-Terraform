@@ -161,6 +161,17 @@ jobs:
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
       
+      # Download the Terraform Power Platform provider from GitHub
+      - name: Download Terraform Power Platform Provider
+        env: 
+          GITHUB_TOKEN: ${{ secrets.PAT_DOWNLOAD_RELEASE }}
+          PROVIDER_VERSION: v2.0.1
+          PROVIDER_REPO: microsoft/terraform-provider-power-platform
+          DOWNLOAD_DIR: /usr/share/terraform/providers/registry.terraform.io/microsoft/power-platform
+        run: |
+          gh release download "$PROVIDER_VERSION" --repo "$PROVIDER_REPO" --pattern "*.zip" --dir "$DOWNLOAD_DIR" --clobber
+          ls -la "$DOWNLOAD_DIR"
+      
       # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
       - name: Terraform Init
         run: terraform -chdir=$TARGET_DIR init -backend-config="storage_account_name=$TF_STATE_STORAGE_ACCOUNT_NAME" -backend-config="resource_group_name=$TF_STATE_RESOURCE_GROUP_NAME"

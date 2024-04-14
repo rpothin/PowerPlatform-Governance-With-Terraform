@@ -154,9 +154,10 @@ jobs:
       - name: Terraform Init
         run: terraform -chdir=$TARGET_DIR init -backend-config="storage_account_name=$TF_STATE_STORAGE_ACCOUNT_NAME" -backend-config="resource_group_name=$TF_STATE_RESOURCE_GROUP_NAME"
 
-      # Download saved plan from artifacts  
+      # Download saved plan from artifacts
+      #   Community action: https://github.com/actions/download-artifact
       - name: Download Terraform Plan
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.4
         with:
           name: tfplan
           path: ${{ env.TARGET_DIR }}

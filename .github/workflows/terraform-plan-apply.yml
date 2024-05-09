@@ -1,7 +1,7 @@
 name: terraform-plan-apply
 # Plan and apply a terraform configuration
 
-# Workflow triggered mannually passing the name of the considered Terraform configuration
+# Workflow triggered mannually passing the terraform configuration and the terraform variable file
 on:
   workflow_dispatch:
     inputs:
@@ -10,11 +10,15 @@ on:
         description: 'The name of the Terraform configuration to plan and apply'
         required: true
         options:
-          - dlp-policies
+          - dlp-policy-push
+      terraform_var_file:
+        type: string
+        description: 'The name of the Terraform variable file to use'
+        required: true
 
 # Concurrency configuration for the current workflow - Keep only the latest workflow queued for the considered group
 concurrency:
-  group: terraform-plan-apply
+  group: terraform-plan-apply-${{ github.event.inputs.terraform_configuration }}-${{ github.event.inputs.terraform_var_file }}
   cancel-in-progress: true
 
 # Set up permissions for deploying with secretless Azure federated credentials
@@ -25,23 +29,24 @@ permissions:
 
 #These environment variables are used by the terraform azure provider to setup OIDD authenticate. 
 env:
-  ARM_CLIENT_ID: "${{ secrets.AZURE_CLIENT_ID }}"
   ARM_TENANT_ID: "${{ secrets.AZURE_TENANT_ID }}"
+  ARM_CLIENT_ID: "${{ secrets.AZURE_CLIENT_ID }}"
   ARM_SUBSCRIPTION_ID: "${{ secrets.AZURE_SUBSCRIPTION_ID }}"
-  TF_STATE_STORAGE_ACCOUNT_NAME: ${{ secrets.TF_STATE_STORAGE_ACCOUNT_NAME }}
-  TF_STATE_RESOURCE_GROUP_NAME: ${{ secrets.TF_STATE_RESOURCE_GROUP_NAME }}
-  POWER_PLATFORM_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
   POWER_PLATFORM_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
+  POWER_PLATFORM_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
   TARGET_DIR: ${{ github.workspace }}/src/${{ github.event.inputs.terraform_configuration }}
+  TF_STATE_RESOURCE_GROUP_NAME: ${{ secrets.TF_STATE_RESOURCE_GROUP_NAME }}
+  TF_STATE_STORAGE_ACCOUNT_NAME: ${{ secrets.TF_STATE_STORAGE_ACCOUNT_NAME }}
+  TF_STATE_CONTAINER_NAME: ${{ secrets.TF_STATE_CONTAINER_NAME }}
+  TF_STATE_KEY: ${{ github.event.inputs.terraform_configuration }}-${{ github.event.inputs.terraform_var_file }}.terraform.tfstate
+  TF_VAR_FILE: ${{ github.event.inputs.terraform_var_file }}.tfvars
+  TF_CLI_CONFIG_FILE: ${{ github.workspace }}/src/mirror.tfrc
+  ARM_SKIP_PROVIDER_REGISTRATION: true #this is needed since we are running terraform with read-only permissions
 
 jobs:
   terraform-plan:
     name: 'Terraform Plan'
     runs-on: ubuntu-latest
-    env:
-      #this is needed since we are running terraform with read-only permissions
-      ARM_SKIP_PROVIDER_REGISTRATION: true
-      TF_CLI_CONFIG_FILE: ${{ github.workspace }}/src/mirror.tfrc
     outputs:
       tfplanExitCode: ${{ steps.tf-plan.outputs.exitcode }}
     
@@ -71,8 +76,8 @@ jobs:
       - name: Download Terraform Power Platform Provider
         env: 
           GITHUB_TOKEN: ${{ secrets.PAT_DOWNLOAD_RELEASE }}
-          PROVIDER_VERSION: v2.0.2-preview
-          PROVIDER_REPO: microsoft/terraform-provider-power-platform
+          PROVIDER_VERSION: ${{ vars.POWER_PLATFORM_PROVIDER_VERSION }}
+          PROVIDER_REPO: ${{ vars.POWER_PLATFORM_PROVIDER_REPOSITORY }}
           DOWNLOAD_DIR: /usr/share/terraform/providers/registry.terraform.io/microsoft/power-platform
         run: |
           gh release download "$PROVIDER_VERSION" --repo "$PROVIDER_REPO" --pattern "*.zip" --dir "$DOWNLOAD_DIR" --clobber
@@ -80,7 +85,7 @@ jobs:
       
       # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
       - name: Terraform Init
-        run: terraform -chdir=$TARGET_DIR init -backend-config="storage_account_name=$TF_STATE_STORAGE_ACCOUNT_NAME" -backend-config="resource_group_name=$TF_STATE_RESOURCE_GROUP_NAME"
+        run: terraform -chdir=$TARGET_DIR init -backend-config="storage_account_name=$TF_STATE_STORAGE_ACCOUNT_NAME" -backend-config="resource_group_name=$TF_STATE_RESOURCE_GROUP_NAME" -backend-config="container_name=$TF_STATE_CONTAINER_NAME" -backend-config="key=$TF_STATE_KEY"
 
       # Generates an execution plan for Terraform
       # An exit code of 0 indicated no changes, 1 a terraform failure, 2 there are pending changes.
@@ -88,7 +93,7 @@ jobs:
         id: tf-plan
         run: |
           export exitcode=0
-          terraform -chdir=$TARGET_DIR plan -detailed-exitcode -no-color -out tfplan || export exitcode=$?
+          terraform -chdir=$TARGET_DIR plan -detailed-exitcode -no-color -out tfplan -var-file=$TF_VAR_FILE || export exitcode=$?
 
           echo "exitcode=$exitcode" >> $GITHUB_OUTPUT
           
@@ -112,10 +117,6 @@ jobs:
     needs: [terraform-plan]
     if: github.ref == 'refs/heads/main' && needs.terraform-plan.outputs.tfplanExitCode == 2
     runs-on: ubuntu-latest
-    env:
-      #this is needed since we are running terraform with read-only permissions
-      ARM_SKIP_PROVIDER_REGISTRATION: true
-      TF_CLI_CONFIG_FILE: ${{ github.workspace }}/src/mirror.tfrc
 
     steps:
       # Action used to checkout the main branch in the current repository
@@ -143,8 +144,8 @@ jobs:
       - name: Download Terraform Power Platform Provider
         env: 
           GITHUB_TOKEN: ${{ secrets.PAT_DOWNLOAD_RELEASE }}
-          PROVIDER_VERSION: v2.0.2-preview
-          PROVIDER_REPO: microsoft/terraform-provider-power-platform
+          PROVIDER_VERSION: ${{ vars.POWER_PLATFORM_PROVIDER_VERSION }}
+          PROVIDER_REPO: ${{ vars.POWER_PLATFORM_PROVIDER_REPOSITORY }}
           DOWNLOAD_DIR: /usr/share/terraform/providers/registry.terraform.io/microsoft/power-platform
         run: |
           gh release download "$PROVIDER_VERSION" --repo "$PROVIDER_REPO" --pattern "*.zip" --dir "$DOWNLOAD_DIR" --clobber
@@ -152,7 +153,7 @@ jobs:
       
       # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
       - name: Terraform Init
-        run: terraform -chdir=$TARGET_DIR init -backend-config="storage_account_name=$TF_STATE_STORAGE_ACCOUNT_NAME" -backend-config="resource_group_name=$TF_STATE_RESOURCE_GROUP_NAME"
+        run: terraform -chdir=$TARGET_DIR init -backend-config="storage_account_name=$TF_STATE_STORAGE_ACCOUNT_NAME" -backend-config="resource_group_name=$TF_STATE_RESOURCE_GROUP_NAME" -backend-config="container_name=$TF_STATE_CONTAINER_NAME" -backend-config="key=$TF_STATE_KEY"
 
       # Download saved plan from artifacts
       #   Community action: https://github.com/actions/download-artifact

@@ -2,7 +2,7 @@ terraform {
   required_providers {
     powerplatform = {
       source  = "microsoft/power-platform"
-      version = "2.0.1"
+      version = "2.0.2"
     }
   }
 
@@ -20,7 +20,6 @@ provider "powerplatform" {
 data "powerplatform_connectors" "all_connectors" {}
 
 locals {
-
   business_connectors = toset([
     {
       action_rules = [

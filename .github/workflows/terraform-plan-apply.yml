@@ -71,7 +71,7 @@ jobs:
       - name: Download Terraform Power Platform Provider
         env: 
           GITHUB_TOKEN: ${{ secrets.PAT_DOWNLOAD_RELEASE }}
-          PROVIDER_VERSION: v2.0.1
+          PROVIDER_VERSION: v2.0.2
           PROVIDER_REPO: microsoft/terraform-provider-power-platform
           DOWNLOAD_DIR: /usr/share/terraform/providers/registry.terraform.io/microsoft/power-platform
         run: |
@@ -143,7 +143,7 @@ jobs:
       - name: Download Terraform Power Platform Provider
         env: 
           GITHUB_TOKEN: ${{ secrets.PAT_DOWNLOAD_RELEASE }}
-          PROVIDER_VERSION: v2.0.1
+          PROVIDER_VERSION: v2.0.2
           PROVIDER_REPO: microsoft/terraform-provider-power-platform
           DOWNLOAD_DIR: /usr/share/terraform/providers/registry.terraform.io/microsoft/power-platform
         run: |

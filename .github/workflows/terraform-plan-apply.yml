@@ -21,6 +21,8 @@ concurrency:
   group: terraform-plan-apply-${{ github.event.inputs.terraform_configuration }}-${{ github.event.inputs.terraform_var_file }}
   cancel-in-progress: true
 
+run-name: Plan and apply ${{ github.event.inputs.terraform_configuration }} with ${{ github.event.inputs.terraform_var_file }} by @${{ github.actor }}
+
 # Set up permissions for deploying with secretless Azure federated credentials
 # https://learn.microsoft.com/en-us/azure/developer/github/connect-from-azure?tabs=azure-portal%2Clinux#set-up-azure-login-with-openid-connect-authentication
 permissions:

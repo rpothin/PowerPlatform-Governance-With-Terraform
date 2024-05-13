@@ -1,3 +1,4 @@
+# Inialize the Terraform configuration
 terraform {
   required_providers {
     powerplatform = {
@@ -9,6 +10,11 @@ terraform {
   backend "azurerm" {
     use_oidc = true
   }
+}
+
+# Configure providers
+provider "azurerm" {
+  features {}
 }
 
 provider "powerplatform" {
@@ -24,6 +30,7 @@ resource "azurerm_resource_group" "rg" {
   location = var.location
 }
 
+# Create a Power Platform billing policy
 resource "powerplatform_billing_policy" "pay_as_you_go" {
   name     = var.billing_policy_display_name
   location = var.location

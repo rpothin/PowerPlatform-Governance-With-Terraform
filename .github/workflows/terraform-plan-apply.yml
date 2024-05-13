@@ -10,7 +10,7 @@ on:
         description: 'The name of the Terraform configuration to plan and apply'
         required: true
         options:
-          - dlp-policy-push
+          - dlp-policies
       terraform_var_file:
         type: string
         description: 'The name of the Terraform variable file to use'

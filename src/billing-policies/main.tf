@@ -27,13 +27,13 @@ data "azurerm_subscription" "current" {}
 # Create an Azure resource group
 resource "azurerm_resource_group" "rg" {
   name     = var.resource_group_name
-  location = var.location
+  location = var.resource_group_location
 }
 
 # Create a Power Platform billing policy
 resource "powerplatform_billing_policy" "pay_as_you_go" {
   name     = var.billing_policy_display_name
-  location = var.location
+  location = var.billing_policy_region
   status   = "Enabled"
   billing_instrument = {
     resource_group  = azurerm_resource_group.rg.name

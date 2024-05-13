@@ -27,6 +27,6 @@ resource "powerplatform_billing_policy" "pay_as_you_go" {
   status   = "Enabled"
   billing_instrument = {
     resource_group  = azurerm_resource_group.rg.name
-    subscription_id = data.azurerm_subscription.current.subscription_id
+    subscription_id = azurerm_resource_group.rg.subscription_id
   }
 }

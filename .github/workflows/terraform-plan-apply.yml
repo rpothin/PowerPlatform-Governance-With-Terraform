@@ -11,6 +11,7 @@ on:
         required: true
         options:
           - dlp-policies
+          - billing-policies
       terraform_var_file:
         type: string
         description: 'The name of the Terraform variable file to use'

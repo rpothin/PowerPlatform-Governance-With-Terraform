@@ -83,11 +83,13 @@ jobs:
             - name: Terraform Output
               run: terraform -chdir=$TARGET_DIR output -json > ${{ github.workspace }}/src/${{ matrix.terraform_configuration }}.json
 
-            # Commit the changes to the repository
+            # Commit and push the changes to the repository
             - name: Commit changes
               run: |
                 git config --global user.email "github-actions@github.com"
                 git config --global user.name "github-actions"
+                
                 git add .
                 git commit -m "Update ${{ github.workspace }}/src/${{ matrix.terraform_configuration }}.json"
-                git push
+                
+                git -c http.extraheader="AUTHORIZATION: Bearer ${{ secrets.GITHUB_TOKEN }}" push origin main

@@ -1,0 +1,2 @@
+# Igore all unwanted files from running the terraform output command
+src/*/.terraform/**

@@ -18,6 +18,6 @@ provider "powerplatform" {
 data "powerplatform_connectors" "all_connectors" {}
 
 output "all_connectors" {
-  value = data.powerplatform_connectors.all_connectors
+  value = data.powerplatform_connectors.all_connectors.connectors
   description = "All power platform connectors"
 }

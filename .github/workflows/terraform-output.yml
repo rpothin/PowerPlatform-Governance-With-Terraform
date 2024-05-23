@@ -107,7 +107,7 @@ jobs:
 
             # Get the data in Terraform configurations as JSON files
             - name: Terraform Output
-              run: terraform -chdir=$TARGET_DIR output -json > ${{ github.workspace }}/src/${{ matrix.terraform_configuration }}.json
+              run: terraform -chdir=$TARGET_DIR output -json > ${{ github.workspace }}/src/${{ matrix.terraform_configuration }}/${{ matrix.terraform_configuration }}.json
 
             # Commit and push the changes to the repository
             - name: Commit changes

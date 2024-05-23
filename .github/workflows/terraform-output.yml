@@ -38,6 +38,7 @@ jobs:
             terraform_configuration: [ 'power-platform-connectors' ]
         name: 'Terraform Output'
         runs-on: ubuntu-latest
+        permissions: write-all
         env:
           TARGET_DIR: ${{ github.workspace }}/src/${{ matrix.terraform_configuration }}
           TF_STATE_KEY: ${{ matrix.terraform_configuration }}.terraform.tfstate
@@ -90,6 +91,6 @@ jobs:
                 git config --global user.email 'GitHub Action'
                 
                 git add .
-                git commit -m "Update ${{ github.workspace }}/src/${{ matrix.terraform_configuration }}.json"
+                git commit -m "Update ${{ matrix.terraform_configuration }}.json"
                 
                 git -c http.extraheader="AUTHORIZATION: Bearer ${{ secrets.GITHUB_TOKEN }}" push origin main

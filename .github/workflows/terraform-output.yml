@@ -86,8 +86,8 @@ jobs:
             # Commit and push the changes to the repository
             - name: Commit changes
               run: |
-                git config --global user.email "github-actions@github.com"
-                git config --global user.name "github-actions"
+                git config --global user.name 'action@github.com'
+                git config --global user.email 'GitHub Action'
                 
                 git add .
                 git commit -m "Update ${{ github.workspace }}/src/${{ matrix.terraform_configuration }}.json"

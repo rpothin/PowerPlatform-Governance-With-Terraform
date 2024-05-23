@@ -1,0 +1,93 @@
+name: terraform-output
+# Get the data in Terraform configurations as JSON files
+
+# Workflow scheduled to run every day at 03:00 AM EST (UTC-5) but can also be run manually
+on:
+  workflow_dispatch:
+
+# Concurrency configuration for the current workflow - Keep only the latest workflow queued for the considered group
+concurrency:
+  group: terraform-output
+  cancel-in-progress: true
+
+run-name: Terraform output
+
+# Set up permissions for deploying with secretless Azure federated credentials
+# https://learn.microsoft.com/en-us/azure/developer/github/connect-from-azure?tabs=azure-portal%2Clinux#set-up-azure-login-with-openid-connect-authentication
+permissions:
+  id-token: write
+  contents: read
+
+#These environment variables are used by the terraform azure provider to setup OIDD authenticate. 
+env:
+  ARM_TENANT_ID: "${{ secrets.AZURE_TENANT_ID }}"
+  ARM_CLIENT_ID: "${{ secrets.AZURE_CLIENT_ID }}"
+  ARM_SUBSCRIPTION_ID: "${{ secrets.AZURE_SUBSCRIPTION_ID }}"
+  POWER_PLATFORM_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
+  POWER_PLATFORM_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
+  TF_STATE_RESOURCE_GROUP_NAME: ${{ secrets.TF_STATE_RESOURCE_GROUP_NAME }}
+  TF_STATE_STORAGE_ACCOUNT_NAME: ${{ secrets.TF_STATE_STORAGE_ACCOUNT_NAME }}
+  TF_STATE_CONTAINER_NAME: ${{ secrets.TF_STATE_CONTAINER_NAME }}
+  TF_CLI_CONFIG_FILE: ${{ github.workspace }}/src/mirror.tfrc
+  ARM_SKIP_PROVIDER_REGISTRATION: true #this is needed since we are running terraform with read-only permissions
+
+jobs:
+    terraform-output:
+        strategy:
+          matrix:
+            terraform_configuration: [ 'power-platform-connectors' ]
+        name: 'Terraform Output'
+        runs-on: ubuntu-latest
+        env:
+          TARGET_DIR: ${{ github.workspace }}/src/${{ matrix.terraform_configuration }}
+          TF_STATE_KEY: ${{ matrix.terraform_configuration }}.terraform.tfstate
+        
+        steps:
+            # Action used to checkout the main branch in the current repository
+            #   Community action: https://github.com/actions/checkout
+            - name: Checkout
+              uses: actions/checkout@v4.1.1
+
+            # Install the latest version of the Terraform CLI
+            #   Community action: https://github.com/hashicorp/setup-terraform
+            - name: Setup Terraform
+              uses: hashicorp/setup-terraform@v3
+              with:
+                terraform_wrapper: false
+
+            # Log in to Azure using the Azure login action and with OpenID Connect (OIDC) federated credentials
+            #  Community action: https://github.com/Azure/login
+            - name: Log in with Azure (Federated Credentials)
+              uses: azure/login@v2
+              with:
+                client-id: ${{ secrets.AZURE_CLIENT_ID }}
+                tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+                subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+            
+            # Download the Terraform Power Platform provider from GitHub
+            - name: Download Terraform Power Platform Provider
+              env: 
+                GITHUB_TOKEN: ${{ secrets.PAT_DOWNLOAD_RELEASE }}
+                PROVIDER_VERSION: ${{ vars.POWER_PLATFORM_PROVIDER_VERSION }}
+                PROVIDER_REPO: ${{ vars.POWER_PLATFORM_PROVIDER_REPOSITORY }}
+                DOWNLOAD_DIR: /usr/share/terraform/providers/registry.terraform.io/microsoft/power-platform
+              run: |
+                gh release download "$PROVIDER_VERSION" --repo "$PROVIDER_REPO" --pattern "*.zip" --dir "$DOWNLOAD_DIR" --clobber
+                ls -la "$DOWNLOAD_DIR"
+            
+            # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
+            - name: Terraform Init
+              run: terraform -chdir=$TARGET_DIR init -backend-config="storage_account_name=$TF_STATE_STORAGE_ACCOUNT_NAME" -backend-config="resource_group_name=$TF_STATE_RESOURCE_GROUP_NAME" -backend-config="container_name=$TF_STATE_CONTAINER_NAME" -backend-config="key=$TF_STATE_KEY"
+
+            # Get the data in Terraform configurations as JSON files
+            - name: Terraform Output
+              run: terraform -chdir=$TARGET_DIR output -json > ${{ github.workspace }}/src/${{ matrix.terraform_configuration }}.json
+
+            # Commit the changes to the repository
+            - name: Commit changes
+              run: |
+                git config --global user.email "github-actions@github.com"
+                git config --global user.name "github-actions"
+                git add .
+                git commit -m "Update ${{ github.workspace }}/src/${{ matrix.terraform_configuration }}.json"
+                git push

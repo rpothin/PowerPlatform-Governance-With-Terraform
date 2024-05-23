@@ -4,6 +4,8 @@ name: terraform-output
 # Workflow scheduled to run every day at 03:00 AM EST (UTC-5) but can also be run manually
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '0 8 * * *'
 
 # Concurrency configuration for the current workflow - Keep only the latest workflow queued for the considered group
 concurrency:

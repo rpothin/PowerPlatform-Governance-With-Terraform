@@ -43,6 +43,12 @@ The goal is to see if the Terraform provider can be effectively used to automate
 | [**src/dlp-policies**](./src/dlp-policies/)                         | Terraform configuration to manage DLP policies in Power Platform                                      |
 | [**src/billing-policies**](./src/billing-policies/)                 | Terraform configuration to manage billing policies in Power Platform                                  |
 
+### Notebooks
+
+| Notebook                                                                                                                         | Description                                                                                             |
+| -------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| [**notebooks/convert-existing-dlp-policies-to-tfvars-files.dib**](./notebooks/convert-existing-dlp-policies-to-tfvars-files.dib) | Notebook to convert existing DLP policies synchronized from Power Platform to Terraform variables files |
+
 ## 📖 Log book
 
 ### Workspace setup

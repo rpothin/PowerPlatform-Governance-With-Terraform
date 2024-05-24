@@ -129,3 +129,4 @@ All files in this repository are subject to the [MIT](LICENSE) license.
 ### Terraform learning
 
 - [Terraform - Get started - Azure](https://developer.hashicorp.com/terraform/tutorials/azure-get-started)
+- [Write Terraform Tests](https://developer.hashicorp.com/terraform/tutorials/configuration-language/test)

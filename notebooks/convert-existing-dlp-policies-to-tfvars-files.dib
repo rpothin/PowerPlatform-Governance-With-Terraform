@@ -1,0 +1,132 @@
+#!meta
+
+{"kernelInfo":{"defaultKernelName":"csharp","items":[{"aliases":[],"name":"csharp"},{"aliases":[],"languageName":"pwsh","name":"pwsh"}]}}
+
+#!markdown
+
+# Convert existing Power Platform DLP policies into Terraform variables files
+
+Assuming you already have DLP policies in place and you would like to manage them using Terraform, this notebook will help you convert the existing DLP policies into Terraform variables files.
+
+#!pwsh
+
+# Extract exsiting DLP policies
+$existingDlpPoliciesFileContent = Get-Content '../src/existing-dlp-policies/existing-dlp-policies.json' | ConvertFrom-Json
+
+#!pwsh
+
+# Initialize an array to store the new tfvars file names
+$newTfvarsFileNames = @()
+
+# Go through each existing to generate a tfvars file
+foreach ($policy in $existingDlpPoliciesFileContent.all_dlp_policies.value.policies) {
+    # Initialize an empty string
+    $tfvarsContent = ""
+
+    # Add the policy details
+    $tfvarsContent += "display_name = `"$($policy.display_name)`""
+    $tfvarsContent += "`n"
+    $tfvarsContent += "environment_type = `"$($policy.environment_type)`""
+    $tfvarsContent += "`n"
+    $tfvarsContent += "environments = [`"" + ($policy.environments -join '","') + "`"]"
+    $tfvarsContent += "`n"
+    $tfvarsContent += "`n"
+
+    # Add the business connectors details
+    $tfvarsContent += "business_connectors = ["
+    foreach ($businessConnector in $policy.business_connectors) {
+        $tfvarsContent += "`n"
+        $tfvarsContent += "  {"
+        $tfvarsContent += "`n"
+        $tfvarsContent += "    id = `"$($businessConnector.id)`""
+        $tfvarsContent += "`n"
+        $tfvarsContent += "    default_action_rule_behavior = `"$($businessConnector.default_action_rule_behavior)`""
+        $tfvarsContent += "`n"
+
+        # Add the action rules details
+        if ($businessConnector.action_rules) {
+            $tfvarsContent += "    action_rules = ["
+            foreach ($actionRule in $businessConnector.action_rules) {
+                $tfvarsContent += "`n"
+                $tfvarsContent += "      {"
+                $tfvarsContent += "`n"
+                $tfvarsContent += "        action_id = `"$($actionRule.action_id)`""
+                $tfvarsContent += "`n"
+                $tfvarsContent += "        behavior = `"$($actionRule.behavior)`""
+                $tfvarsContent += "`n"
+                $tfvarsContent += "      },"
+            }
+            $tfvarsContent = $tfvarsContent.TrimEnd(",")
+            $tfvarsContent += "`n"
+            $tfvarsContent += "    ]"
+            $tfvarsContent += "`n"
+        } else {
+            $tfvarsContent += "    action_rules = []"
+            $tfvarsContent += "`n"
+        }
+
+        # Add the endpoint rules details
+        if ($businessConnector.endpoint_rules) {
+            $tfvarsContent += "    endpoint_rules = ["
+            foreach ($endpointRule in $businessConnector.endpoint_rules) {
+                $tfvarsContent += "`n"
+                $tfvarsContent += "      {"
+                $tfvarsContent += "`n"
+                $tfvarsContent += "        behavior = `"$($endpointRule.behavior)`""
+                $tfvarsContent += "`n"
+                $tfvarsContent += "        endpoint = `"$($endpointRule.endpoint)`""
+                $tfvarsContent += "`n"
+                $tfvarsContent += "        order = $($endpointRule.order)"
+                $tfvarsContent += "`n"
+                $tfvarsContent += "      },"
+            }
+            $tfvarsContent = $tfvarsContent.TrimEnd(",")
+            $tfvarsContent += "`n"
+            $tfvarsContent += "    ]"
+            $tfvarsContent += "`n"
+        } else {
+            $tfvarsContent += "    endpoint_rules = []"
+            $tfvarsContent += "`n"
+        }
+
+        $tfvarsContent += "  },"
+    }
+
+    $tfvarsContent = $tfvarsContent.TrimEnd(",")
+    $tfvarsContent += "`n"
+    $tfvarsContent += "]"
+    $tfvarsContent += "`n"
+    $tfvarsContent += "`n"
+
+    # Add the custom connectors details
+    $tfvarsContent += "custom_connectors = ["
+    foreach ($customConnector in $policy.custom_connectors_patterns) {
+        $tfvarsContent += "`n"
+        $tfvarsContent += "  {"
+        $tfvarsContent += "`n"
+        $tfvarsContent += "    order = $($customConnector.order)"
+        $tfvarsContent += "`n"
+        $tfvarsContent += "    host_url_pattern = `"$($customConnector.host_url_pattern)`""
+        $tfvarsContent += "`n"
+        $tfvarsContent += "    data_group = `"$($customConnector.data_group)`""
+        $tfvarsContent += "`n"
+        $tfvarsContent += "  },"        
+    }
+
+    $tfvarsContent = $tfvarsContent.TrimEnd(",")
+    $tfvarsContent += "`n"
+    $tfvarsContent += "]"
+
+    # Build tfvars file name from policy display name
+    # Replace spaces with "-" and convert to lowercase
+    $tfvarsFileName = $policy.display_name -replace ' ', '-'
+    $tfvarsFileName = $tfvarsFileName.ToLower()
+
+    # Write the tfvars string to a file
+    Set-Content -Path "../src/dlp-policies/$tfvarsFileName.tfvars" -Value $tfvarsContent
+
+    # Add the tfvars file name to the array
+    $newTfvarsFileNames += $tfvarsFileName
+}
+
+$newTfvarsFileNames

@@ -37,7 +37,7 @@ jobs:
     terraform-output:
         strategy:
           matrix:
-            terraform_configuration: [ 'power-platform-connectors' ]
+            terraform_configuration: [ 'power-platform-connectors', 'existing-dlp-policies' ]
         name: 'Terraform Output'
         runs-on: ubuntu-latest
         permissions: write-all

@@ -24,6 +24,25 @@ The PowerPlatform-Governance-With-Terraform project is a sandbox to try and expl
 
 The goal is to see if the Terraform provider can be effectively used to automate the governance of Power Platform environments.
 
+## Inventory
+
+### Workflows
+
+| Workflow                                                               | Description                                                                                                                |
+| ---------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| [**terraform-plan-apply**](.github/workflows/terraform-plan-apply.yml) | Manually plan and apply a Terraform configuration taking into consideration a specified set of variables                   |
+| [**terraform-output**](.github/workflows/terraform-output.yml)         | Automatically save the outputs of specified Terraform configurations into JSON files                                       |
+| [**terraform-destroy**](.github/workflows/terraform-destroy.yml)       | Manually destroy the resources created by a Terraform configuration taking into consideration a specified set of variables |
+
+### Infrastructure as code
+
+| Folder                                                              | Description                                                                                           |
+| ------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| [**src/terraform-state-iac**](./src/terraform-state-iac/)           | Bicep infrastructure as code to deploy the Azure resources needed to manage the Terraform state files |
+| [**src/power-plaform-connectors**](./src/power-plaform-connectors/) | Terraform configuration to synchronize Power Platform connectors to a JSON file                       |
+| [**src/dlp-policies**](./src/dlp-policies/)                         | Terraform configuration to manage DLP policies in Power Platform                                      |
+| [**src/billing-policies**](./src/billing-policies/)                 | Terraform configuration to manage billing policies in Power Platform                                  |
+
 ## 📖 Log book
 
 ### Workspace setup
@@ -107,6 +126,7 @@ az deployment sub create --location "Your Location" --template-file main.bicep -
 ## 💡 Ideas
 
 - [ ] Automate the workspace setup using a Polyglot Notebook - _allowing to combine code and documentation in the same place_
+- [ ] Implement unit tests for the Terraform configurations - _to ensure the configurations are working as expected_
 
 ## ❗ Code of Conduct
 

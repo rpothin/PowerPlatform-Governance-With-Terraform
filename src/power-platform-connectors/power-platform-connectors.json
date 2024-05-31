@@ -2620,7 +2620,7 @@
       },
       {
         "description": "Microsoft Service copilot connector",
-        "display_name": "Copilot for Service (preview)",
+        "display_name": "Copilot for Service extension (preview)",
         "id": "/providers/Microsoft.PowerApps/apis/shared_copilotforservice",
         "name": "shared_copilotforservice",
         "publisher": "Microsoft Corporation",
@@ -10745,6 +10745,16 @@
         "name": "shared_toodledo",
         "publisher": "Microsoft",
         "tier": "Standard",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
+        "description": "Add SMS to your workflows with touchSMS. Have an inbound SMS to your Virtual Number initiate a workflow, or trigger an SMS to be sent based on workflow parameters.",
+        "display_name": "touchSMS",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_touchsmsv2documentat",
+        "name": "shared_touchsmsv2documentat",
+        "publisher": "Edgility",
+        "tier": "Premium",
         "type": "Microsoft.PowerApps/apis",
         "unblockable": false
       },

@@ -6769,8 +6769,8 @@
         "unblockable": false
       },
       {
-        "description": "Mime Automation provides a way to extract data from a TNEF (winmail.dat) encoded file",
-        "display_name": "Mime Automation",
+        "description": "Mime Automation provides a way to extract data from a TNEF (winmail.dat) or EML base64-encoded file",
+        "display_name": "Mime Automation (Independent Publisher)",
         "id": "/providers/Microsoft.PowerApps/apis/shared_mimeautomationip",
         "name": "shared_mimeautomationip",
         "publisher": "Andreas Cieslik",
@@ -11929,7 +11929,7 @@
         "unblockable": false
       },
       {
-        "description": "This connectors consists various GET/POST/PUT/PATCH actions you can use to perform your daily tasks.",
+        "description": "This connector consists of various GET/POST/PUT/PATCH actions you can use to perform your daily tasks.",
         "display_name": "Zellis",
         "id": "/providers/Microsoft.PowerApps/apis/shared_zellis",
         "name": "shared_zellis",
@@ -12093,6 +12093,16 @@
         "display_name": "HTTP Webhook",
         "id": "HttpWebhook",
         "name": "HttpWebhook",
+        "publisher": "Microsoft",
+        "tier": "Built-in",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
+        "description": "",
+        "display_name": "When a Teams webhook request is received",
+        "id": "TeamsWebhookRequestReceived",
+        "name": "TeamsWebhookRequestReceived",
         "publisher": "Microsoft",
         "tier": "Built-in",
         "type": "Microsoft.PowerApps/apis",

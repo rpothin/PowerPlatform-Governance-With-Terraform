@@ -869,6 +869,16 @@
         "unblockable": false
       },
       {
+        "description": "ApyHub is the a service utility belt that helps developers save time and boost efficiency. Included are actions creating iCalendar file and URL address.",
+        "display_name": "ApyHub Generate iCal (Independent Publisher)",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_apyhubgenerateical",
+        "name": "shared_apyhubgenerateical",
+        "publisher": "Troy Taylor",
+        "tier": "Premium",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
         "description": "ApyHub is the a service utility belt that helps developers save time and boost efficiency. Included are actions for archiving and unarchive files.",
         "display_name": "ApyHub (Independent Publisher)",
         "id": "/providers/Microsoft.PowerApps/apis/shared_apyhubip",
@@ -5273,6 +5283,16 @@
         "display_name": "iManage Insight Plus",
         "id": "/providers/Microsoft.PowerApps/apis/shared_imanageinsightplus",
         "name": "shared_imanageinsightplus",
+        "publisher": "iManage LLC",
+        "tier": "Premium",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
+        "description": "iManage Tracker connector enables users to automate their tasks and task management processes within the iManage platform while they keep all their files secure in the iManage Work environment.",
+        "display_name": "iManage Tracker",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_imanagetracker",
+        "name": "shared_imanagetracker",
         "publisher": "iManage LLC",
         "tier": "Premium",
         "type": "Microsoft.PowerApps/apis",
@@ -10654,6 +10674,16 @@
         "id": "/providers/Microsoft.PowerApps/apis/shared_tilkee",
         "name": "shared_tilkee",
         "publisher": "Microsoft",
+        "tier": "Premium",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
+        "description": "Accurate and reliable time information for any location in the world. Say goodbye to time zone confusion and hello to easy time tracking with our service.",
+        "display_name": "TimeAPI (Independent Publisher)",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_timeapi",
+        "name": "shared_timeapi",
+        "publisher": "Fördős András",
         "tier": "Premium",
         "type": "Microsoft.PowerApps/apis",
         "unblockable": false

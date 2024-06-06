@@ -6749,8 +6749,8 @@
         "unblockable": false
       },
       {
-        "description": "Microsoft Search allows intelligent search against M365 content of multiple types from different workloads.",
-        "display_name": "Microsoft Search",
+        "description": "M365 Search provides intelligent and advanced enterprise search capabilities across multiple entities in M365. Search through Files by SharePoint and OneDrive Business, People by Exchange, Messages by Teams and Exchange and External Graph content. Seamlessly search through all M365 entities through one connector.",
+        "display_name": "M365 Search",
         "id": "/providers/Microsoft.PowerApps/apis/shared_microsoftsearch",
         "name": "shared_microsoftsearch",
         "publisher": "Microsoft",

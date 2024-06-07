@@ -1039,6 +1039,16 @@
         "unblockable": false
       },
       {
+        "description": "Dynamics 365 Sales Insights helps increase your sales with the help of AI-driven insights that promote personalized engagement and proactive decision making to help build relationships.",
+        "display_name": "Dynamics 365 Sales Insights",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_assistantstudiov2",
+        "name": "shared_assistantstudiov2",
+        "publisher": "Microsoft",
+        "tier": "Premium",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
         "description": "Unleash your productivity and streamline collaboration by connecting design and make data between Revit and the tools of your choice.",
         "display_name": "Autodesk Data Exchange",
         "id": "/providers/Microsoft.PowerApps/apis/shared_autodeskforgedataexc",

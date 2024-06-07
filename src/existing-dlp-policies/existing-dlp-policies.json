@@ -132,7 +132,7 @@
       }
     ],
     "value": {
-      "id": "1717402041",
+      "id": "3",
       "policies": [
         {
           "blocked_connectors": [
@@ -602,6 +602,12 @@
               "action_rules": [],
               "default_action_rule_behavior": "",
               "endpoint_rules": [],
+              "id": "/providers/Microsoft.PowerApps/apis/shared_apyhubgenerateical"
+            },
+            {
+              "action_rules": [],
+              "default_action_rule_behavior": "",
+              "endpoint_rules": [],
               "id": "/providers/Microsoft.PowerApps/apis/shared_apyhubip"
             },
             {
@@ -693,6 +699,12 @@
               "default_action_rule_behavior": "",
               "endpoint_rules": [],
               "id": "/providers/Microsoft.PowerApps/apis/shared_assistantstudio"
+            },
+            {
+              "action_rules": [],
+              "default_action_rule_behavior": "",
+              "endpoint_rules": [],
+              "id": "/providers/Microsoft.PowerApps/apis/shared_assistantstudiov2"
             },
             {
               "action_rules": [],
@@ -1629,6 +1641,12 @@
               "default_action_rule_behavior": "",
               "endpoint_rules": [],
               "id": "/providers/Microsoft.PowerApps/apis/shared_convertkitip"
+            },
+            {
+              "action_rules": [],
+              "default_action_rule_behavior": "",
+              "endpoint_rules": [],
+              "id": "/providers/Microsoft.PowerApps/apis/shared_copilotforservice"
             },
             {
               "action_rules": [],
@@ -3236,6 +3254,12 @@
               "action_rules": [],
               "default_action_rule_behavior": "",
               "endpoint_rules": [],
+              "id": "/providers/Microsoft.PowerApps/apis/shared_imanagetracker"
+            },
+            {
+              "action_rules": [],
+              "default_action_rule_behavior": "",
+              "endpoint_rules": [],
               "id": "/providers/Microsoft.PowerApps/apis/shared_imanagework"
             },
             {
@@ -4539,6 +4563,12 @@
               "default_action_rule_behavior": "",
               "endpoint_rules": [],
               "id": "/providers/Microsoft.PowerApps/apis/shared_oodrivesign"
+            },
+            {
+              "action_rules": [],
+              "default_action_rule_behavior": "",
+              "endpoint_rules": [],
+              "id": "/providers/Microsoft.PowerApps/apis/shared_openaiassistants"
             },
             {
               "action_rules": [],
@@ -6386,6 +6416,12 @@
               "action_rules": [],
               "default_action_rule_behavior": "",
               "endpoint_rules": [],
+              "id": "/providers/Microsoft.PowerApps/apis/shared_timeapi"
+            },
+            {
+              "action_rules": [],
+              "default_action_rule_behavior": "",
+              "endpoint_rules": [],
               "id": "/providers/Microsoft.PowerApps/apis/shared_timeghost"
             },
             {
@@ -6429,6 +6465,12 @@
               "default_action_rule_behavior": "",
               "endpoint_rules": [],
               "id": "/providers/Microsoft.PowerApps/apis/shared_toodledo"
+            },
+            {
+              "action_rules": [],
+              "default_action_rule_behavior": "",
+              "endpoint_rules": [],
+              "id": "/providers/Microsoft.PowerApps/apis/shared_touchsmsv2documentat"
             },
             {
               "action_rules": [],
@@ -7287,6 +7329,12 @@
               "default_action_rule_behavior": "",
               "endpoint_rules": [],
               "id": "PvaSkills"
+            },
+            {
+              "action_rules": [],
+              "default_action_rule_behavior": "",
+              "endpoint_rules": [],
+              "id": "TeamsWebhookRequestReceived"
             }
           ],
           "business_connectors": [
@@ -7351,7 +7399,7 @@
           ],
           "id": "2d51ba59-b747-4776-bd93-07e2009caf97",
           "last_modified_by": "Service Principal (8a48a2f9-7e9f-4728-bf76-bdbc944e558d)",
-          "last_modified_time": "2024-05-13T01:43:19.4087075Z",
+          "last_modified_time": "2024-06-07T02:22:43.7399749Z",
           "non_business_connectors": [
             {
               "action_rules": [],
@@ -13657,6 +13705,56 @@
               "action_rules": [],
               "default_action_rule_behavior": "",
               "endpoint_rules": [],
+              "id": "/providers/Microsoft.PowerApps/apis/shared_commondataservice"
+            },
+            {
+              "action_rules": [],
+              "default_action_rule_behavior": "",
+              "endpoint_rules": [],
+              "id": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            {
+              "action_rules": [],
+              "default_action_rule_behavior": "",
+              "endpoint_rules": [],
+              "id": "/providers/Microsoft.PowerApps/apis/shared_office365users"
+            },
+            {
+              "action_rules": [],
+              "default_action_rule_behavior": "",
+              "endpoint_rules": [],
+              "id": "/providers/Microsoft.PowerApps/apis/shared_powerappsforappmakers"
+            },
+            {
+              "action_rules": [],
+              "default_action_rule_behavior": "",
+              "endpoint_rules": [],
+              "id": "/providers/Microsoft.PowerApps/apis/shared_teams"
+            }
+          ],
+          "created_by": "Raphael Pothin",
+          "created_time": "2023-05-30T02:50:36.0118385Z",
+          "custom_connectors_patterns": [
+            {
+              "data_group": "Ignore",
+              "host_url_pattern": "*",
+              "order": 1
+            }
+          ],
+          "default_connectors_classification": "Blocked",
+          "display_name": "Rpothin Environments",
+          "environment_type": "OnlyEnvironments",
+          "environments": [
+            "bc71e927-ffe8-effa-8666-78c5cfa7bdf4"
+          ],
+          "id": "940f8b8e-d739-46e7-8938-9a220d6f31fb",
+          "last_modified_by": "Raphael Pothin",
+          "last_modified_time": "2023-07-13T01:50:28.8018707Z",
+          "non_business_connectors": [
+            {
+              "action_rules": [],
+              "default_action_rule_behavior": "",
+              "endpoint_rules": [],
               "id": "/providers/Microsoft.PowerApps/apis/shared_approvals"
             },
             {
@@ -13772,56 +13870,6 @@
               "default_action_rule_behavior": "",
               "endpoint_rules": [],
               "id": "/providers/Microsoft.PowerApps/apis/shared_yammer"
-            }
-          ],
-          "created_by": "Raphael Pothin",
-          "created_time": "2023-05-30T02:50:36.0118385Z",
-          "custom_connectors_patterns": [
-            {
-              "data_group": "Ignore",
-              "host_url_pattern": "*",
-              "order": 1
-            }
-          ],
-          "default_connectors_classification": "Blocked",
-          "display_name": "Rpothin Environments",
-          "environment_type": "OnlyEnvironments",
-          "environments": [
-            "bc71e927-ffe8-effa-8666-78c5cfa7bdf4"
-          ],
-          "id": "940f8b8e-d739-46e7-8938-9a220d6f31fb",
-          "last_modified_by": "Raphael Pothin",
-          "last_modified_time": "2023-07-13T01:50:28.8018707Z",
-          "non_business_connectors": [
-            {
-              "action_rules": [],
-              "default_action_rule_behavior": "",
-              "endpoint_rules": [],
-              "id": "/providers/Microsoft.PowerApps/apis/shared_commondataservice"
-            },
-            {
-              "action_rules": [],
-              "default_action_rule_behavior": "",
-              "endpoint_rules": [],
-              "id": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
-            },
-            {
-              "action_rules": [],
-              "default_action_rule_behavior": "",
-              "endpoint_rules": [],
-              "id": "/providers/Microsoft.PowerApps/apis/shared_office365users"
-            },
-            {
-              "action_rules": [],
-              "default_action_rule_behavior": "",
-              "endpoint_rules": [],
-              "id": "/providers/Microsoft.PowerApps/apis/shared_powerappsforappmakers"
-            },
-            {
-              "action_rules": [],
-              "default_action_rule_behavior": "",
-              "endpoint_rules": [],
-              "id": "/providers/Microsoft.PowerApps/apis/shared_teams"
             }
           ]
         },
@@ -21213,6 +21261,80 @@
               "action_rules": [],
               "default_action_rule_behavior": "",
               "endpoint_rules": [],
+              "id": "/providers/Microsoft.PowerApps/apis/shared_commondataservice"
+            },
+            {
+              "action_rules": [],
+              "default_action_rule_behavior": "",
+              "endpoint_rules": [],
+              "id": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            {
+              "action_rules": [],
+              "default_action_rule_behavior": "",
+              "endpoint_rules": [],
+              "id": "/providers/Microsoft.PowerApps/apis/shared_office365users"
+            },
+            {
+              "action_rules": [],
+              "default_action_rule_behavior": "",
+              "endpoint_rules": [],
+              "id": "/providers/Microsoft.PowerApps/apis/shared_teams"
+            },
+            {
+              "action_rules": [],
+              "default_action_rule_behavior": "",
+              "endpoint_rules": [],
+              "id": "CSKnowledgeDocs"
+            },
+            {
+              "action_rules": [],
+              "default_action_rule_behavior": "",
+              "endpoint_rules": [],
+              "id": "CSKnowledgePublicSites"
+            },
+            {
+              "action_rules": [],
+              "default_action_rule_behavior": "",
+              "endpoint_rules": [],
+              "id": "CSKnowledgeSharePoint"
+            },
+            {
+              "action_rules": [],
+              "default_action_rule_behavior": "",
+              "endpoint_rules": [],
+              "id": "Http"
+            },
+            {
+              "action_rules": [],
+              "default_action_rule_behavior": "",
+              "endpoint_rules": [],
+              "id": "PvaCustomDemoMobile"
+            }
+          ],
+          "created_by": "Raphael Pothin",
+          "created_time": "2023-05-30T02:49:33.0585425Z",
+          "custom_connectors_patterns": [
+            {
+              "data_group": "Ignore",
+              "host_url_pattern": "*",
+              "order": 1
+            }
+          ],
+          "default_connectors_classification": "Blocked",
+          "display_name": "Default",
+          "environment_type": "ExceptEnvironments",
+          "environments": [
+            "bc71e927-ffe8-effa-8666-78c5cfa7bdf4"
+          ],
+          "id": "af19e406-9396-48eb-8414-63ad0f5a3fa8",
+          "last_modified_by": "Raphael Pothin",
+          "last_modified_time": "2024-06-04T01:41:46.213644Z",
+          "non_business_connectors": [
+            {
+              "action_rules": [],
+              "default_action_rule_behavior": "",
+              "endpoint_rules": [],
               "id": "/providers/Microsoft.PowerApps/apis/shared_approvals"
             },
             {
@@ -21328,81 +21450,6 @@
               "default_action_rule_behavior": "",
               "endpoint_rules": [],
               "id": "/providers/Microsoft.PowerApps/apis/shared_yammer"
-            }
-          ],
-          "created_by": "Raphael Pothin",
-          "created_time": "2023-05-30T02:49:33.0585425Z",
-          "custom_connectors_patterns": [
-            {
-              "data_group": "Ignore",
-              "host_url_pattern": "*",
-              "order": 1
-            }
-          ],
-          "default_connectors_classification": "Blocked",
-          "display_name": "Default",
-          "environment_type": "ExceptEnvironments",
-          "environments": [
-            "Default-7e7df62f-7cc4-4e63-a250-a277063e1be7",
-            "bc71e927-ffe8-effa-8666-78c5cfa7bdf4"
-          ],
-          "id": "af19e406-9396-48eb-8414-63ad0f5a3fa8",
-          "last_modified_by": "Raphael Pothin",
-          "last_modified_time": "2024-05-13T17:16:52.0013787Z",
-          "non_business_connectors": [
-            {
-              "action_rules": [],
-              "default_action_rule_behavior": "",
-              "endpoint_rules": [],
-              "id": "/providers/Microsoft.PowerApps/apis/shared_commondataservice"
-            },
-            {
-              "action_rules": [],
-              "default_action_rule_behavior": "",
-              "endpoint_rules": [],
-              "id": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
-            },
-            {
-              "action_rules": [],
-              "default_action_rule_behavior": "",
-              "endpoint_rules": [],
-              "id": "/providers/Microsoft.PowerApps/apis/shared_office365users"
-            },
-            {
-              "action_rules": [],
-              "default_action_rule_behavior": "",
-              "endpoint_rules": [],
-              "id": "/providers/Microsoft.PowerApps/apis/shared_teams"
-            },
-            {
-              "action_rules": [],
-              "default_action_rule_behavior": "",
-              "endpoint_rules": [],
-              "id": "CSKnowledgeDocs"
-            },
-            {
-              "action_rules": [],
-              "default_action_rule_behavior": "",
-              "endpoint_rules": [],
-              "id": "CSKnowledgePublicSites"
-            },
-            {
-              "action_rules": [],
-              "default_action_rule_behavior": "",
-              "endpoint_rules": [],
-              "id": "CSKnowledgeSharePoint"
-            },
-            {
-              "action_rules": [],
-              "default_action_rule_behavior": "",
-              "endpoint_rules": [],
-              "id": "Http"
-            },
-            {
-              "action_rules": [],
-              "default_action_rule_behavior": "",
-              "endpoint_rules": [],
-              "id": "PvaCustomDemoMobile"
             }
           ]
         }

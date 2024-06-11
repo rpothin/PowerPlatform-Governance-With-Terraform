@@ -107,4 +107,4 @@ jobs:
 
       # Run terraform import to import a resource into the Terraform state file
       - name: Terraform Import
-        run: terraform -chdir=$TARGET_DIR import ${{ github.event.inputs.resource_type }} ${{ github.event.inputs.resource_id }}
+        run: terraform -chdir=$TARGET_DIR import -var-file=$TF_VAR_FILE ${{ github.event.inputs.resource_type }} ${{ github.event.inputs.resource_id }}

@@ -1969,6 +1969,16 @@
         "unblockable": false
       },
       {
+        "description": "With CB Blockchain Seal, you can digitally seal documents using blockchain technology. This solution allows users to verify that documents are authentic and unchanged - anywhere and anytime after applying the timestamped seal. It is fast and cost-effective. It is also a thousand times more ecological than other blockchain solutions, and no prior knowledge of blockchain is required.",
+        "display_name": "CB Blockchain Seal",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_cbblockchainseal",
+        "name": "shared_cbblockchainseal",
+        "publisher": "Connecting Software s.r.o. \u0026 Co. KG",
+        "tier": "Premium",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
         "description": "Content syndication allows CDC to offer web content to other sites and applications. Media, topics, and organizations data is available.",
         "display_name": "CDC Content Services (Independent Publisher)",
         "id": "/providers/Microsoft.PowerApps/apis/shared_cdccontentservicesip",
@@ -2453,7 +2463,7 @@
         "display_name": "Cognito Forms",
         "id": "/providers/Microsoft.PowerApps/apis/shared_cognitoforms",
         "name": "shared_cognitoforms",
-        "publisher": "Cognito, LLC",
+        "publisher": "Cognito Forms",
         "tier": "Standard",
         "type": "Microsoft.PowerApps/apis",
         "unblockable": false

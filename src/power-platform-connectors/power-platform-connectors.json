@@ -2399,6 +2399,16 @@
         "unblockable": false
       },
       {
+        "description": "Connect to your Cognite Data Fusion project using the Cognite Data Fusion API endpoints found at https://api-docs.cognite.com/\nDocumentation: https://docs.cognite.com/ Developer: https://developer.cognite.com/",
+        "display_name": "Cognite Data Fusion",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_cognitedatafusionblu",
+        "name": "shared_cognitedatafusionblu",
+        "publisher": "Cognite AS",
+        "tier": "Premium",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
         "description": "Extract rich information from images to categorize and process visual data—and protect your users from unwanted content with this Azure Cognitive Service.",
         "display_name": "Computer Vision API",
         "id": "/providers/Microsoft.PowerApps/apis/shared_cognitiveservicescomputervision",
@@ -10179,11 +10189,11 @@
         "unblockable": false
       },
       {
-        "description": "Strategic Portfolio Manager enables you to continuously connect, align and orchestrate all investments with strategies to drive business agility more effectively. It connects disparate silos across the enterprise and provides 360 degrees of insight to help ensure that all investments are derived from – and continuously align with – strategic priorities. Connect to Strategic Portfolio Manager to plan, manage, and adjust your initiatives, projects, epics and more.",
-        "display_name": "Strategic Portfolio Manager",
+        "description": "NH360 Portfolio Insights Connector enables you to continuously connect, align and orchestrate all investments with strategies to drive business agility more effectively. It connects disparate silos across the enterprise and provides 360 degrees of insight to help ensure that all investments are derived from – and continuously align with – strategic priorities. Connect to NH360 Portfolio Insights to plan, manage, and adjust your initiatives, projects, epics and more.",
+        "display_name": "NH360 Portfolio Insights",
         "id": "/providers/Microsoft.PowerApps/apis/shared_strategicportfoliomanager",
         "name": "shared_strategicportfoliomanager",
-        "publisher": "UMT 360 LLC",
+        "publisher": "The North Highland Company",
         "tier": "Premium",
         "type": "Microsoft.PowerApps/apis",
         "unblockable": false
@@ -11114,6 +11124,46 @@
         "id": "/providers/Microsoft.PowerApps/apis/shared_ukgovtcheckvatip",
         "name": "shared_ukgovtcheckvatip",
         "publisher": "Fördős András",
+        "tier": "Premium",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
+        "description": "UKG Pro HCM Connector for Pro HR, Payroll and Talent.",
+        "display_name": "UKG Pro HCM",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_ukgprohcm",
+        "name": "shared_ukgprohcm",
+        "publisher": "Dilip Chenani",
+        "tier": "Premium",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
+        "description": "Employee Self Service Actions.",
+        "display_name": "UKG Pro WFM Employee",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_ukgprowfmemployee",
+        "name": "shared_ukgprowfmemployee",
+        "publisher": "Ria Gupta",
+        "tier": "Premium",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
+        "description": "Pulls person Current User Information (Logged In User)",
+        "display_name": "UKG Pro WFM People",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_ukgprowfmpeople",
+        "name": "shared_ukgprowfmpeople",
+        "publisher": "Dilip Chenani",
+        "tier": "Premium",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
+        "description": "Employee Self Service Actions for Timekeeping.",
+        "display_name": "UKG Pro WFM Timekeeping",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_ukgprowfmtimekeeping",
+        "name": "shared_ukgprowfmtimekeeping",
+        "publisher": "Ria Gupta",
         "tier": "Premium",
         "type": "Microsoft.PowerApps/apis",
         "unblockable": false

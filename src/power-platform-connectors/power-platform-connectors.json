@@ -3309,6 +3309,16 @@
         "unblockable": false
       },
       {
+        "description": "Access common DocuWare features from within your flows.",
+        "display_name": "DocuWare GmbH",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_docuware",
+        "name": "shared_docuware",
+        "publisher": "DocuWare GmbH",
+        "tier": "Premium",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
         "description": "Use Dokobit portal with all the features that it has but make it automated so that you don't have to waste your time on the administrative job. Put together an automated document signing process puzzle from only the parts you need: signing, sharing, downloading or deleting documents, removing and replacing signers, getting details about signers and signature information.",
         "display_name": "Dokobit Portal",
         "id": "/providers/Microsoft.PowerApps/apis/shared_dokobitportal",
@@ -5094,6 +5104,16 @@
         "id": "/providers/Microsoft.PowerApps/apis/shared_huddoboards",
         "name": "shared_huddoboards",
         "publisher": "Huddo by ISW Development Pty Ltd",
+        "tier": "Premium",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
+        "description": "Datagate is a Software-as-a-Service data management platform from Works Applications that provides users with a streamlined method for storing, managing, and generating insights from their business data. This connector allows you to leverage your business data on Datagate from the Power Platform.",
+        "display_name": "HUE Datagate",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_huedatagate",
+        "name": "shared_huedatagate",
+        "publisher": "Works Applications Co., Ltd.",
         "tier": "Premium",
         "type": "Microsoft.PowerApps/apis",
         "unblockable": false
@@ -11694,6 +11714,16 @@
         "id": "/providers/Microsoft.PowerApps/apis/shared_wordcloudbytextvisip",
         "name": "shared_wordcloudbytextvisip",
         "publisher": "Troy Taylor",
+        "tier": "Premium",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
+        "description": "Provides access to the WordLift GraphQL API, allowing for queries to extract entity data from a Knowledge Graph built with WordLift. Supports a wide range of operations for enhanced data extraction.",
+        "display_name": "Default title",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_wordliftgraphql",
+        "name": "shared_wordliftgraphql",
+        "publisher": "WordLift",
         "tier": "Premium",
         "type": "Microsoft.PowerApps/apis",
         "unblockable": false

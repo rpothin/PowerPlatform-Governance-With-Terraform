@@ -40,8 +40,3 @@ variable "custom_connectors" {
     data_group       = string
   }))
 }
-
-variable id {
-  description = "The ID of the resource to import."
-  type = string
-}

@@ -17,11 +17,6 @@ provider "powerplatform" {
 
 data "powerplatform_connectors" "all_connectors" {}
 
-import {
-  to = powerplatform_data_loss_prevention_policy.policy
-  id = var.id
-}
-
 resource "powerplatform_data_loss_prevention_policy" "policy" {
   display_name                      = var.display_name
   default_connectors_classification = "Blocked"

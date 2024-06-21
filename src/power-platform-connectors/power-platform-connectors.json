@@ -750,7 +750,7 @@
       },
       {
         "description": "Claude is a large language model (LLM) built by Anthropic. It's trained to be a helpful assistant in a conversational tone.",
-        "display_name": "Anthropic",
+        "display_name": "Anthropic (Independent Publisher)",
         "id": "/providers/Microsoft.PowerApps/apis/shared_anthropicip",
         "name": "shared_anthropicip",
         "publisher": "Troy Taylor",
@@ -10273,7 +10273,7 @@
         "display_name": "SureXeroLite  (Independent Publisher)",
         "id": "/providers/Microsoft.PowerApps/apis/shared_surexerolite",
         "name": "shared_surexerolite",
-        "publisher": "Vadim Khoruzhenko",
+        "publisher": "The 848 Group",
         "tier": "Premium",
         "type": "Microsoft.PowerApps/apis",
         "unblockable": false

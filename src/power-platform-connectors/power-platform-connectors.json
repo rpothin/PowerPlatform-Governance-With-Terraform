@@ -759,6 +759,16 @@
         "unblockable": false
       },
       {
+        "description": "Sends an Ant Text Template from your email account, when triggered. You can use data provided by your flow, as merge fields in your template.",
+        "display_name": "Ant Text Automation",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_anttextautomation",
+        "name": "shared_anttextautomation",
+        "publisher": "Insight Office",
+        "tier": "Premium",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
         "description": "With the APITemplate.io service, you can create PDF documents and images, and manage your templates. Generate social media images, banners or PDFs from reusable templates with no coding!",
         "display_name": "APITemplate (Independent Publisher)",
         "id": "/providers/Microsoft.PowerApps/apis/shared_apitemplateip",
@@ -1365,6 +1375,16 @@
         "name": "shared_basecamp2",
         "publisher": "Microsoft",
         "tier": "Standard",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
+        "description": "Beauhurst collects data from various sources to build detailed profiles of companies. It tracks company financials, funding rounds, investors, key personnel, and other relevant data points.",
+        "display_name": "Beauhurst (Independent Publisher)",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_beauhurst",
+        "name": "shared_beauhurst",
+        "publisher": "Axazure",
+        "tier": "Premium",
         "type": "Microsoft.PowerApps/apis",
         "unblockable": false
       },
@@ -2834,6 +2854,16 @@
         "id": "/providers/Microsoft.PowerApps/apis/shared_d7sms",
         "name": "shared_d7sms",
         "publisher": "Signtaper Technologies FZCO",
+        "tier": "Premium",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
+        "description": "Thousands of hilarious dad jokes for your entertainment apps from API Ninjas.",
+        "display_name": "Dad Jokes (Independent Publisher)",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_dadjokes",
+        "name": "shared_dadjokes",
+        "publisher": "Troy Taylor",
         "tier": "Premium",
         "type": "Microsoft.PowerApps/apis",
         "unblockable": false
@@ -10629,7 +10659,7 @@
         "unblockable": false
       },
       {
-        "description": "The Guardian web service has access to all the content the Guardian new organization creates, categorized by tags and section.",
+        "description": "The Guardian web service has access to all the content the Guardian news organization creates, categorized by tags and section.",
         "display_name": "The Guardian (Independent Publisher)",
         "id": "/providers/Microsoft.PowerApps/apis/shared_theguardian",
         "name": "shared_theguardian",
@@ -11604,6 +11634,16 @@
         "id": "/providers/Microsoft.PowerApps/apis/shared_webexintegrationip",
         "name": "shared_webexintegrationip",
         "publisher": "University College London, Oscar Hui",
+        "tier": "Premium",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
+        "description": "This is the Swagger 2.0 schema for the Webhood URL scanner API",
+        "display_name": "Webhood URL Scanner",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_webhoodurlscanner",
+        "name": "shared_webhoodurlscanner",
+        "publisher": "Webhood",
         "tier": "Premium",
         "type": "Microsoft.PowerApps/apis",
         "unblockable": false

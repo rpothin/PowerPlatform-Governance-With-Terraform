@@ -839,6 +839,16 @@
         "unblockable": false
       },
       {
+        "description": "App store connect connector allows you to automate tasks and workflows for your app store submissions and updates. You can use it to create, edit, and manage metadata, screenshots, in-app purchases, and more. With this tool, you can save time and avoid errors by streamlining your app store processes.",
+        "display_name": "App Store Connect - App Store (Independent Publisher)",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_appstoreconnect",
+        "name": "shared_appstoreconnect",
+        "publisher": "Farhan Latif",
+        "tier": "Premium",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
         "description": "This connector will be used to integrate with Fuji Xerox Cloud Connect Studio solution. This connector will be used as Trigger only and will be triggered once user perform a Scan from Cloud Connect Studio solution",
         "display_name": "Cloud Connect Studio",
         "id": "/providers/Microsoft.PowerApps/apis/shared_appstudioapi",
@@ -4189,7 +4199,7 @@
         "unblockable": false
       },
       {
-        "description": "The online Financial Services Register is a public record of financial services firms, individuals and other bodies regulated by the Financial Conduct Authority (FCA)",
+        "description": "The online Financial Services Register is a public record of financial services firms, individuals and other bodies regulated by the Financial Conduct Authority (FCA) in the UK",
         "display_name": "FCA (Independent Publisher)",
         "id": "/providers/Microsoft.PowerApps/apis/shared_financialconductauth",
         "name": "shared_financialconductauth",
@@ -4234,6 +4244,16 @@
         "id": "/providers/Microsoft.PowerApps/apis/shared_fishwatchip",
         "name": "shared_fishwatchip",
         "publisher": "Fordos Andras",
+        "tier": "Premium",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
+        "description": "A way to access the Fitbit Web API",
+        "display_name": "Fitbit (Independent Publisher)",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_fitbit",
+        "name": "shared_fitbit",
+        "publisher": "Ashwin Ganesh Kumar",
         "tier": "Premium",
         "type": "Microsoft.PowerApps/apis",
         "unblockable": false

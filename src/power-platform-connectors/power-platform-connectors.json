@@ -859,6 +859,16 @@
         "unblockable": false
       },
       {
+        "description": "Apptigent CloudTools provides a range of data integration actions for Salesforce that can be accessed by any cloud-connected app or workflow.",
+        "display_name": "CloudTools for Salesforce",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_apptigentcloudtools",
+        "name": "shared_apptigentcloudtools",
+        "publisher": "Apptigent",
+        "tier": "Premium",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
         "description": "Apptigent PowerTools LITE (Community Edition) is a FREE suite of essential utilities for enterprise workflow, forms and cloud applications. Manipulate text, modify collections, format dates and times, convert currency, perform advanced mathematical calculations, shorten URL's, encode strings, and more. PowerTools is the ultimate power user toolkit - FREE!",
         "display_name": "Apptigent PowerTools LITE",
         "id": "/providers/Microsoft.PowerApps/apis/shared_apptigentpowertoolslite",
@@ -4693,7 +4703,7 @@
         "display_name": "Google PaLM (Independent Publisher)",
         "id": "/providers/Microsoft.PowerApps/apis/shared_googlepalm",
         "name": "shared_googlepalm",
-        "publisher": "Priyaranjan KS",
+        "publisher": "Priyaranjan KS , Vidya Sagar Alti [Tata Consultancy Services]",
         "tier": "Premium",
         "type": "Microsoft.PowerApps/apis",
         "unblockable": false
@@ -5239,7 +5249,7 @@
         "unblockable": false
       },
       {
-        "description": "IA-Connect is a Robotic Process Automation (RPA) platform which adds RPA functionality from the Cloud to on-premises virtual machines or over Citrix or Microsoft Remote Desktop (RDS) connections. This is the module for automating Joiner / Mover / Leaver processes.",
+        "description": "IA-Connect is a Robotic Process Automation 'RPA' platform which adds RPA functionality from the Cloud to on-premises virtual machines or over Citrix or Microsoft Remote Desktop 'RDS' connections. This is the module for automating Joiner, Mover, Leaver processes.",
         "display_name": "IA-Connect JML",
         "id": "/providers/Microsoft.PowerApps/apis/shared_iaconnectjml",
         "name": "shared_iaconnectjml",
@@ -5259,7 +5269,7 @@
         "unblockable": false
       },
       {
-        "description": "IA-Connect is a Robotic Process Automation (RPA) platform which adds RPA functionality from the Cloud to on-premises virtual machines or over Citrix or Microsoft Remote Desktop (RDS) connections. This is the module for Microsoft Office automation.",
+        "description": "IA-Connect is a Robotic Process Automation 'RPA' platform which adds RPA functionality from the Cloud to on-premises virtual machines or over Citrix or Microsoft Remote Desktop 'RDS' connections. This is the module for Microsoft Office automation.",
         "display_name": "IA-Connect Microsoft Office",
         "id": "/providers/Microsoft.PowerApps/apis/shared_iaconnectmsoffice",
         "name": "shared_iaconnectmsoffice",
@@ -5289,7 +5299,7 @@
         "unblockable": false
       },
       {
-        "description": "IA-Connect is a Robotic Process Automation (RPA) platform which adds RPA functionality from the Cloud to on-premises virtual machines or over Citrix or Microsoft Remote Desktop (RDS) connections. This is the module for Windows application User Interface Automation (UIA).",
+        "description": "IA-Connect is a Robotic Process Automation RPA platform which adds RPA functionality from the Cloud to on-premises virtual machines or over Citrix or Microsoft Remote Desktop RDS connections. This is the module for Windows application User Interface Automation UIA.",
         "display_name": "IA-Connect UI",
         "id": "/providers/Microsoft.PowerApps/apis/shared_iaconnectui",
         "name": "shared_iaconnectui",
@@ -5299,7 +5309,7 @@
         "unblockable": false
       },
       {
-        "description": "IA-Connect is a Robotic Process Automation (RPA) platform which adds RPA functionality from the Cloud to on-premises virtual machines or over Citrix or Microsoft Remote Desktop (RDS) connections. This is the module for Web Browser automation.",
+        "description": "IA-Connect is a Robotic Process Automation 'RPA' platform which adds RPA functionality from the Cloud to on-premises virtual machines or over Citrix or Microsoft Remote Desktop 'RDS' connections. This is the module for Web Browser automation.",
         "display_name": "IA-Connect Web Browser",
         "id": "/providers/Microsoft.PowerApps/apis/shared_iaconnectwebbrowser",
         "name": "shared_iaconnectwebbrowser",
@@ -8224,6 +8234,16 @@
         "id": "/providers/Microsoft.PowerApps/apis/shared_pipedrive",
         "name": "shared_pipedrive",
         "publisher": "Microsoft",
+        "tier": "Premium",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
+        "description": "Pipeliner is a next generation sales CRM software designed to empower sales teams and grow profitable customer relationships. The connector provides an API to work with Pipeliner records.",
+        "display_name": "Pipeliner CRM",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_pipelinercrm",
+        "name": "shared_pipelinercrm",
+        "publisher": "Pipelinersales, Inc.",
         "tier": "Premium",
         "type": "Microsoft.PowerApps/apis",
         "unblockable": false

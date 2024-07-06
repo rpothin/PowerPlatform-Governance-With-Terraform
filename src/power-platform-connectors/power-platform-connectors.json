@@ -2079,6 +2079,16 @@
         "unblockable": false
       },
       {
+        "description": "Celonis Platform API to work with Knowledge Model elements, like records, KPIs, filters, triggers and their related data.",
+        "display_name": "Celonis",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_celonis",
+        "name": "shared_celonis",
+        "publisher": "Celonis",
+        "tier": "Premium",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
         "description": "Send learning and performance events to Centrical platform.",
         "display_name": "Centrical",
         "id": "/providers/Microsoft.PowerApps/apis/shared_centrical",
@@ -3684,6 +3694,16 @@
         "id": "/providers/Microsoft.PowerApps/apis/shared_edenai",
         "name": "shared_edenai",
         "publisher": "Eden AI",
+        "tier": "Premium",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
+        "description": "Add SMS to your workflows with Edgility. Have an inbound SMS to your Virtual Number initiate a workflow, or trigger an SMS to be sent based on workflow parameters.",
+        "display_name": "Edgility",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_edgility",
+        "name": "shared_edgility",
+        "publisher": "Edgility",
         "tier": "Premium",
         "type": "Microsoft.PowerApps/apis",
         "unblockable": false
@@ -11633,7 +11653,7 @@
         "display_name": "Weavo Liquid Loom",
         "id": "/providers/Microsoft.PowerApps/apis/shared_weavoliquidloom",
         "name": "shared_weavoliquidloom",
-        "publisher": "Weavo",
+        "publisher": "Weavo Liquid Loom",
         "tier": "Premium",
         "type": "Microsoft.PowerApps/apis",
         "unblockable": false

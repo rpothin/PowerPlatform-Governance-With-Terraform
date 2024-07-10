@@ -2729,6 +2729,16 @@
         "unblockable": false
       },
       {
+        "description": "The custom connector streamlines vILT integration by leveraging customers' Azure AD tenant environments, ensuring data integrity and simplifying authentication. No external Graph API permissions are needed, enhancing security. This versatile connector facilitates low-code solutions for diverse scenarios. By incorporating this custom connector, the full potential of Microsoft Teams API in the case of MS Teams integration is unlocked seamlessly within customers' infrastructure.",
+        "display_name": "Cornerstone Learning vILT",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_cornerstonelearningv",
+        "name": "shared_cornerstonelearningv",
+        "publisher": "Cornerstone On Demand",
+        "tier": "Premium",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
         "description": "Corporate buzzwords are the icing on the cake, proof that not even the business world takes the business world seriously. This generator randomly picks out phrases, which can help your application get ahead in an industry where spin and vagueness reign supreme.",
         "display_name": "Corporate Buzzword Generator (Independent Publisher)",
         "id": "/providers/Microsoft.PowerApps/apis/shared_corporatebuzzwordip",

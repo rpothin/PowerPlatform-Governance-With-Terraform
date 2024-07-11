@@ -542,6 +542,12 @@
               "action_rules": [],
               "default_action_rule_behavior": "",
               "endpoint_rules": [],
+              "id": "/providers/Microsoft.PowerApps/apis/shared_anttextautomation"
+            },
+            {
+              "action_rules": [],
+              "default_action_rule_behavior": "",
+              "endpoint_rules": [],
               "id": "/providers/Microsoft.PowerApps/apis/shared_apitemplateip"
             },
             {
@@ -578,7 +584,19 @@
               "action_rules": [],
               "default_action_rule_behavior": "",
               "endpoint_rules": [],
+              "id": "/providers/Microsoft.PowerApps/apis/shared_appstoreconnect"
+            },
+            {
+              "action_rules": [],
+              "default_action_rule_behavior": "",
+              "endpoint_rules": [],
               "id": "/providers/Microsoft.PowerApps/apis/shared_appstudioapi"
+            },
+            {
+              "action_rules": [],
+              "default_action_rule_behavior": "",
+              "endpoint_rules": [],
+              "id": "/providers/Microsoft.PowerApps/apis/shared_apptigentcloudtools"
             },
             {
               "action_rules": [],
@@ -897,6 +915,12 @@
               "default_action_rule_behavior": "",
               "endpoint_rules": [],
               "id": "/providers/Microsoft.PowerApps/apis/shared_basecamp2"
+            },
+            {
+              "action_rules": [],
+              "default_action_rule_behavior": "",
+              "endpoint_rules": [],
+              "id": "/providers/Microsoft.PowerApps/apis/shared_beauhurst"
             },
             {
               "action_rules": [],
@@ -1304,6 +1328,12 @@
               "action_rules": [],
               "default_action_rule_behavior": "",
               "endpoint_rules": [],
+              "id": "/providers/Microsoft.PowerApps/apis/shared_celonis"
+            },
+            {
+              "action_rules": [],
+              "default_action_rule_behavior": "",
+              "endpoint_rules": [],
               "id": "/providers/Microsoft.PowerApps/apis/shared_centrical"
             },
             {
@@ -1670,6 +1700,12 @@
               "action_rules": [],
               "default_action_rule_behavior": "",
               "endpoint_rules": [],
+              "id": "/providers/Microsoft.PowerApps/apis/shared_cornerstonelearningv"
+            },
+            {
+              "action_rules": [],
+              "default_action_rule_behavior": "",
+              "endpoint_rules": [],
               "id": "/providers/Microsoft.PowerApps/apis/shared_corporatebuzzwordip"
             },
             {
@@ -1767,6 +1803,12 @@
               "default_action_rule_behavior": "",
               "endpoint_rules": [],
               "id": "/providers/Microsoft.PowerApps/apis/shared_d7sms"
+            },
+            {
+              "action_rules": [],
+              "default_action_rule_behavior": "",
+              "endpoint_rules": [],
+              "id": "/providers/Microsoft.PowerApps/apis/shared_dadjokes"
             },
             {
               "action_rules": [],
@@ -2270,6 +2312,12 @@
               "action_rules": [],
               "default_action_rule_behavior": "",
               "endpoint_rules": [],
+              "id": "/providers/Microsoft.PowerApps/apis/shared_edgility"
+            },
+            {
+              "action_rules": [],
+              "default_action_rule_behavior": "",
+              "endpoint_rules": [],
               "id": "/providers/Microsoft.PowerApps/apis/shared_eduframe"
             },
             {
@@ -2601,6 +2649,12 @@
               "default_action_rule_behavior": "",
               "endpoint_rules": [],
               "id": "/providers/Microsoft.PowerApps/apis/shared_fishwatchip"
+            },
+            {
+              "action_rules": [],
+              "default_action_rule_behavior": "",
+              "endpoint_rules": [],
+              "id": "/providers/Microsoft.PowerApps/apis/shared_fitbit"
             },
             {
               "action_rules": [],
@@ -4946,6 +5000,12 @@
               "action_rules": [],
               "default_action_rule_behavior": "",
               "endpoint_rules": [],
+              "id": "/providers/Microsoft.PowerApps/apis/shared_pipelinercrm"
+            },
+            {
+              "action_rules": [],
+              "default_action_rule_behavior": "",
+              "endpoint_rules": [],
               "id": "/providers/Microsoft.PowerApps/apis/shared_pipwarekpis"
             },
             {
@@ -6962,6 +7022,12 @@
               "action_rules": [],
               "default_action_rule_behavior": "",
               "endpoint_rules": [],
+              "id": "/providers/Microsoft.PowerApps/apis/shared_webhoodurlscanner"
+            },
+            {
+              "action_rules": [],
+              "default_action_rule_behavior": "",
+              "endpoint_rules": [],
               "id": "/providers/Microsoft.PowerApps/apis/shared_webmerge"
             },
             {
@@ -7453,7 +7519,7 @@
           ],
           "id": "2d51ba59-b747-4776-bd93-07e2009caf97",
           "last_modified_by": "Service Principal (8a48a2f9-7e9f-4728-bf76-bdbc944e558d)",
-          "last_modified_time": "2024-06-19T01:12:39.033409Z",
+          "last_modified_time": "2024-07-11T01:16:04.7857841Z",
           "non_business_connectors": [
             {
               "action_rules": [],

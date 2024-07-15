@@ -8,6 +8,12 @@ business_connectors = [
     default_action_rule_behavior = ""
     action_rules = []
     endpoint_rules = []
+  },
+  {
+    id = "/providers/Microsoft.PowerApps/apis/shared_commondataservice"
+    default_action_rule_behavior = ""
+    action_rules = []
+    endpoint_rules = []
   }
 ]
 

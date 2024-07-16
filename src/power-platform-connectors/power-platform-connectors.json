@@ -2679,7 +2679,7 @@
         "unblockable": false
       },
       {
-        "description": "Content Manager is a governance-based enterprise content management system designed to help government agencies, regulated industries and global organizations manage their business content from creation to disposal. Connect to Content Manager to perform actions including creating or updating records or locations, uploading or downloading electronic files, searching and more. (1.0.2.712)",
+        "description": "Content Manager is a governance-based enterprise content management system designed to help government agencies, regulated industries and global organizations manage their business content from creation to disposal. Connect to Content Manager to perform actions including creating or updating records or locations, uploading or downloading electronic files, searching and more. (1.0.4.757)",
         "display_name": "Content Manager Power Connect",
         "id": "/providers/Microsoft.PowerApps/apis/shared_contentmanagerpowerc",
         "name": "shared_contentmanagerpowerc",

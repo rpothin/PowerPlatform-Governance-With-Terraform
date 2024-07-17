@@ -123,7 +123,7 @@ foreach ($policy in $existingDlpPoliciesFileContent.all_dlp_policies.value.polic
     $tfvarsFileName = $tfvarsFileName.ToLower()
 
     # Write the tfvars string to a file
-    Set-Content -Path "../src/dlp-policies/$tfvarsFileName.tfvars" -Value $tfvarsContent
+    Set-Content -Path "../src/dlp-policies/tfvars/$tfvarsFileName.tfvars" -Value $tfvarsContent
 
     # Add the tfvars file name to the array
     $newTfvarsFileNames += $tfvarsFileName

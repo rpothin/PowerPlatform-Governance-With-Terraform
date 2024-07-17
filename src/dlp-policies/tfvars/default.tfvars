@@ -1,124 +1,58 @@
 display_name = "Default"
 environment_type = "ExceptEnvironments"
-environments = ["Default-7e7df62f-7cc4-4e63-a250-a277063e1be7","bc71e927-ffe8-effa-8666-78c5cfa7bdf4"]
+environments = ["bc71e927-ffe8-effa-8666-78c5cfa7bdf4"]
 
 business_connectors = [
   {
-    id = "/providers/Microsoft.PowerApps/apis/shared_approvals"
+    id = "/providers/Microsoft.PowerApps/apis/shared_commondataservice"
     default_action_rule_behavior = ""
     action_rules = []
     endpoint_rules = []
   },
   {
-    id = "/providers/Microsoft.PowerApps/apis/shared_cloudappsecurity"
+    id = "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
     default_action_rule_behavior = ""
     action_rules = []
     endpoint_rules = []
   },
   {
-    id = "/providers/Microsoft.PowerApps/apis/shared_excelonlinebusiness"
+    id = "/providers/Microsoft.PowerApps/apis/shared_office365users"
     default_action_rule_behavior = ""
     action_rules = []
     endpoint_rules = []
   },
   {
-    id = "/providers/Microsoft.PowerApps/apis/shared_flowpush"
+    id = "/providers/Microsoft.PowerApps/apis/shared_teams"
     default_action_rule_behavior = ""
     action_rules = []
     endpoint_rules = []
   },
   {
-    id = "/providers/Microsoft.PowerApps/apis/shared_kaizala"
+    id = "CSKnowledgeDocs"
     default_action_rule_behavior = ""
     action_rules = []
     endpoint_rules = []
   },
   {
-    id = "/providers/Microsoft.PowerApps/apis/shared_microsoftformspro"
+    id = "CSKnowledgePublicSites"
     default_action_rule_behavior = ""
     action_rules = []
     endpoint_rules = []
   },
   {
-    id = "/providers/Microsoft.PowerApps/apis/shared_office365"
+    id = "CSKnowledgeSharePoint"
     default_action_rule_behavior = ""
     action_rules = []
     endpoint_rules = []
   },
   {
-    id = "/providers/Microsoft.PowerApps/apis/shared_office365groups"
+    id = "Http"
     default_action_rule_behavior = ""
     action_rules = []
     endpoint_rules = []
   },
   {
-    id = "/providers/Microsoft.PowerApps/apis/shared_office365groupsmail"
-    default_action_rule_behavior = ""
-    action_rules = []
-    endpoint_rules = []
-  },
-  {
-    id = "/providers/Microsoft.PowerApps/apis/shared_onedriveforbusiness"
-    default_action_rule_behavior = ""
-    action_rules = []
-    endpoint_rules = []
-  },
-  {
-    id = "/providers/Microsoft.PowerApps/apis/shared_onenote"
-    default_action_rule_behavior = ""
-    action_rules = []
-    endpoint_rules = []
-  },
-  {
-    id = "/providers/Microsoft.PowerApps/apis/shared_planner"
-    default_action_rule_behavior = ""
-    action_rules = []
-    endpoint_rules = []
-  },
-  {
-    id = "/providers/Microsoft.PowerApps/apis/shared_powerappsnotification"
-    default_action_rule_behavior = ""
-    action_rules = []
-    endpoint_rules = []
-  },
-  {
-    id = "/providers/Microsoft.PowerApps/apis/shared_powerappsnotificationv2"
-    default_action_rule_behavior = ""
-    action_rules = []
-    endpoint_rules = []
-  },
-  {
-    id = "/providers/Microsoft.PowerApps/apis/shared_powerbi"
-    default_action_rule_behavior = ""
-    action_rules = []
-    endpoint_rules = []
-  },
-  {
-    id = "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
-    default_action_rule_behavior = ""
-    action_rules = []
-    endpoint_rules = []
-  },
-  {
-    id = "/providers/Microsoft.PowerApps/apis/shared_shifts"
-    default_action_rule_behavior = ""
-    action_rules = []
-    endpoint_rules = []
-  },
-  {
-    id = "/providers/Microsoft.PowerApps/apis/shared_skypeforbiz"
-    default_action_rule_behavior = ""
-    action_rules = []
-    endpoint_rules = []
-  },
-  {
-    id = "/providers/Microsoft.PowerApps/apis/shared_todo"
-    default_action_rule_behavior = ""
-    action_rules = []
-    endpoint_rules = []
-  },
-  {
-    id = "/providers/Microsoft.PowerApps/apis/shared_yammer"
+    id = "PvaCustomDemoMobile"
     default_action_rule_behavior = ""
     action_rules = []
     endpoint_rules = []

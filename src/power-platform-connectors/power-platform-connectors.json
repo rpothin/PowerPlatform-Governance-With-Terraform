@@ -943,7 +943,7 @@
         "display_name": "ArcGIS",
         "id": "/providers/Microsoft.PowerApps/apis/shared_arcgis",
         "name": "shared_arcgis",
-        "publisher": "Esri Inc.",
+        "publisher": "Esri, Inc.",
         "tier": "Premium",
         "type": "Microsoft.PowerApps/apis",
         "unblockable": false
@@ -963,7 +963,7 @@
         "display_name": "ArcGIS PaaS",
         "id": "/providers/Microsoft.PowerApps/apis/shared_arcgispaas",
         "name": "shared_arcgispaas",
-        "publisher": "Esri Inc.",
+        "publisher": "Esri, Inc.",
         "tier": "Premium",
         "type": "Microsoft.PowerApps/apis",
         "unblockable": false
@@ -1059,8 +1059,8 @@
         "unblockable": false
       },
       {
-        "description": "Dynamics 365 Sales Insights helps increase your sales with the help of AI-driven insights that promote personalized engagement and proactive decision making to help build relationships.",
-        "display_name": "Dynamics 365 Sales Insights",
+        "description": "Dynamics 365 Sales Insights helps increase your sales with the help of AI-driven insights that promote personalized engagement and proactive decision making to help build relationships (deprecated).",
+        "display_name": "Dynamics 365 Sales Insights (deprecated)",
         "id": "/providers/Microsoft.PowerApps/apis/shared_assistantstudio",
         "name": "shared_assistantstudio",
         "publisher": "Microsoft",

@@ -14996,6 +14996,12 @@
               "default_action_rule_behavior": "",
               "endpoint_rules": [],
               "id": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            {
+              "action_rules": [],
+              "default_action_rule_behavior": "",
+              "endpoint_rules": [],
+              "id": "/providers/Microsoft.PowerApps/apis/shared_office365users"
             }
           ],
           "created_by": "Service Principal (8a48a2f9-7e9f-4728-bf76-bdbc944e558d)",
@@ -15015,7 +15021,7 @@
           ],
           "id": "484fbe0c-6109-4edb-ae62-e6e017bc875b",
           "last_modified_by": "Service Principal (8a48a2f9-7e9f-4728-bf76-bdbc944e558d)",
-          "last_modified_time": "2024-07-15T02:20:52.3781735Z",
+          "last_modified_time": "2024-07-17T03:06:52.4288766Z",
           "non_business_connectors": [
             {
               "action_rules": [],
@@ -15070,12 +15076,6 @@
               "default_action_rule_behavior": "",
               "endpoint_rules": [],
               "id": "/providers/Microsoft.PowerApps/apis/shared_office365groupsmail"
-            },
-            {
-              "action_rules": [],
-              "default_action_rule_behavior": "",
-              "endpoint_rules": [],
-              "id": "/providers/Microsoft.PowerApps/apis/shared_office365users"
             },
             {
               "action_rules": [],

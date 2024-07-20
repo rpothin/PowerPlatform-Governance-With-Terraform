@@ -6389,6 +6389,16 @@
         "unblockable": false
       },
       {
+        "description": "The Litera Search connector exposes functions to execute complex natural language matter searches, giving legal professionals the ability to quickly find and drill down into the details of their firm's litigation and transaction experience.  The connector is a go-to tool for legal insights and information management.",
+        "display_name": "Litera Search",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_literasearch",
+        "name": "shared_literasearch",
+        "publisher": "Litera",
+        "tier": "Premium",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
         "description": "Lit Ipsum is a dummy text generator for web designers and developers. As an alternative to boring old Lorem Ipsum generators, it chooses passages from copyright-free literature courtesy of the Gutenberg Project.",
         "display_name": "Lit Ipsum (Independent Publisher)",
         "id": "/providers/Microsoft.PowerApps/apis/shared_litipsumip",

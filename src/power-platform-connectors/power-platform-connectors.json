@@ -10560,7 +10560,7 @@
       },
       {
         "description": "Microsoft Teams Virtual Events allows you to access Virtual Event data and be notified of changes.",
-        "display_name": "Microsoft Teams Virtual Events",
+        "display_name": "Microsoft Teams Virtual Events (deprecated)",
         "id": "/providers/Microsoft.PowerApps/apis/shared_teamsvirtualevents",
         "name": "shared_teamsvirtualevents",
         "publisher": "Microsoft",

@@ -11539,11 +11539,11 @@
         "unblockable": false
       },
       {
-        "description": "Vineforce is a remote workplace tool built for Microsoft 365 users. It transforms the platform into one cohesive toolkit to help you get more done, experience less burnout, and feel more connected with your teammates.",
+        "description": "Trovve is an AI-powered project management tool that helps your team keep focused and on track, all inside Microsoft Teams.",
         "display_name": "Vineforce",
         "id": "/providers/Microsoft.PowerApps/apis/shared_vineforce",
         "name": "shared_vineforce",
-        "publisher": "Vineforce, Inc.",
+        "publisher": "Vineforce, Inc",
         "tier": "Premium",
         "type": "Microsoft.PowerApps/apis",
         "unblockable": false

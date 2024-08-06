@@ -1159,6 +1159,16 @@
         "unblockable": false
       },
       {
+        "description": "Azure AI Search provides secure information retrieval at scale over user-owned content in traditional and generative AI search applications.",
+        "display_name": "Azure AI Search",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_azureaisearch",
+        "name": "shared_azureaisearch",
+        "publisher": "Microsoft",
+        "tier": "Premium",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
         "description": "Azure App Service connector allows you to manage app services and server farms in your subscription.",
         "display_name": "Azure App Service",
         "id": "/providers/Microsoft.PowerApps/apis/shared_azureappservice",

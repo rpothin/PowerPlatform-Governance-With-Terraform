@@ -6713,7 +6713,7 @@
         "display_name": "Meisterplan",
         "id": "/providers/Microsoft.PowerApps/apis/shared_meisterplan",
         "name": "shared_meisterplan",
-        "publisher": "Meisterplan",
+        "publisher": "itdesign GmbH",
         "tier": "Premium",
         "type": "Microsoft.PowerApps/apis",
         "unblockable": false

@@ -549,6 +549,16 @@
         "unblockable": false
       },
       {
+        "description": "Detect AI-generated images \u0026 audio for your business - and yourself - with AI or Not.",
+        "display_name": "AI or Not (Independent Publisher)",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_aiornot",
+        "name": "shared_aiornot",
+        "publisher": "Fördős András",
+        "tier": "Premium",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
         "description": "Airlabs collects extensive real-time aviation and flight data from thousands of sources to cleanse, aggregate and organize it into comprehensive collections",
         "display_name": "Airlabs",
         "id": "/providers/Microsoft.PowerApps/apis/shared_airlabsip",
@@ -1755,6 +1765,16 @@
         "name": "shared_box",
         "publisher": "Microsoft",
         "tier": "Standard",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
+        "description": "Brave Search allows you to query Brave and get back search results from the web.",
+        "display_name": "Brave Search (Independent Publisher)",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_bravesearch",
+        "name": "shared_bravesearch",
+        "publisher": "Troy Taylor",
+        "tier": "Premium",
         "type": "Microsoft.PowerApps/apis",
         "unblockable": false
       },
@@ -4843,7 +4863,7 @@
         "display_name": "Gravity Forms Professional",
         "id": "/providers/Microsoft.PowerApps/apis/shared_gravityformsprofessi",
         "name": "shared_gravityformsprofessi",
-        "publisher": "Reenhanced LLC",
+        "publisher": "Reenhanced, LLC",
         "tier": "Premium",
         "type": "Microsoft.PowerApps/apis",
         "unblockable": false
@@ -11690,7 +11710,7 @@
       },
       {
         "description": "Use the HTTP connector to fetch resources from various Web services, authenticated by Microsoft Entra ID, or from an on-premise web service.",
-        "display_name": "HTTP With Microsoft Entra ID",
+        "display_name": "HTTP With Microsoft Entra ID (deprecated)",
         "id": "/providers/Microsoft.PowerApps/apis/shared_webcontentsv2",
         "name": "shared_webcontentsv2",
         "publisher": "Microsoft",

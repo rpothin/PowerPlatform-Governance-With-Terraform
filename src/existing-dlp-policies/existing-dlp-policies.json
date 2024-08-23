@@ -18691,12 +18691,6 @@
               "action_rules": [],
               "default_action_rule_behavior": "",
               "endpoint_rules": [],
-              "id": "/providers/Microsoft.PowerApps/apis/shared_keyvault"
-            },
-            {
-              "action_rules": [],
-              "default_action_rule_behavior": "",
-              "endpoint_rules": [],
               "id": "/providers/Microsoft.PowerApps/apis/shared_kintone"
             },
             {
@@ -22755,6 +22749,12 @@
               "action_rules": [],
               "default_action_rule_behavior": "",
               "endpoint_rules": [],
+              "id": "/providers/Microsoft.PowerApps/apis/shared_keyvault"
+            },
+            {
+              "action_rules": [],
+              "default_action_rule_behavior": "",
+              "endpoint_rules": [],
               "id": "/providers/Microsoft.PowerApps/apis/shared_office365users"
             },
             {
@@ -22787,7 +22787,7 @@
           ],
           "id": "940f8b8e-d739-46e7-8938-9a220d6f31fb",
           "last_modified_by": "Raphael Pothin",
-          "last_modified_time": "2024-08-20T02:36:04.5496037Z",
+          "last_modified_time": "2024-08-22T19:05:21.340472Z",
           "non_business_connectors": [
             {
               "action_rules": [],

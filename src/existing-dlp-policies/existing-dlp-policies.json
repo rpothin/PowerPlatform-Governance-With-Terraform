@@ -22039,12 +22039,6 @@
               "action_rules": [],
               "default_action_rule_behavior": "",
               "endpoint_rules": [],
-              "id": "/providers/Microsoft.PowerApps/apis/shared_webcontents"
-            },
-            {
-              "action_rules": [],
-              "default_action_rule_behavior": "",
-              "endpoint_rules": [],
               "id": "/providers/Microsoft.PowerApps/apis/shared_webcontentsv2"
             },
             {
@@ -22768,6 +22762,12 @@
               "default_action_rule_behavior": "",
               "endpoint_rules": [],
               "id": "/providers/Microsoft.PowerApps/apis/shared_teams"
+            },
+            {
+              "action_rules": [],
+              "default_action_rule_behavior": "",
+              "endpoint_rules": [],
+              "id": "/providers/Microsoft.PowerApps/apis/shared_webcontents"
             }
           ],
           "created_by": "Raphael Pothin",
@@ -22787,7 +22787,7 @@
           ],
           "id": "940f8b8e-d739-46e7-8938-9a220d6f31fb",
           "last_modified_by": "Raphael Pothin",
-          "last_modified_time": "2024-08-22T19:05:21.340472Z",
+          "last_modified_time": "2024-08-24T02:45:28.5103494Z",
           "non_business_connectors": [
             {
               "action_rules": [],

@@ -8143,7 +8143,7 @@
         "display_name": "PDF4me Connect",
         "id": "/providers/Microsoft.PowerApps/apis/shared_pdf4meconnect",
         "name": "shared_pdf4meconnect",
-        "publisher": "Ynoox",
+        "publisher": "Ynoox GmbH",
         "tier": "Premium",
         "type": "Microsoft.PowerApps/apis",
         "unblockable": false
@@ -9859,11 +9859,11 @@
         "unblockable": false
       },
       {
-        "description": "SignatureAPI streamlines your document signing process with a customizable, secure, and cost-effective electronic signature platform, ensuring compliance and efficiency.",
+        "description": "Send documents for signing, track progress, and get work done faster with our electronic signature platform built for high volume and ease of integration. https://signatureapi.com/docs/integrations/power-automate/getting-started",
         "display_name": "SignatureAPI",
         "id": "/providers/Microsoft.PowerApps/apis/shared_signatureapi",
         "name": "shared_signatureapi",
-        "publisher": "Signature API, Inc.",
+        "publisher": "SignatureAPI",
         "tier": "Premium",
         "type": "Microsoft.PowerApps/apis",
         "unblockable": false

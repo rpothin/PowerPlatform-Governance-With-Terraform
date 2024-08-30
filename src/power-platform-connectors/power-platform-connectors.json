@@ -2709,6 +2709,16 @@
         "unblockable": false
       },
       {
+        "description": "This is a sample connector to extend Copilot for Sales",
+        "display_name": "Contoso Hub",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_contosohub",
+        "name": "shared_contosohub",
+        "publisher": "Microsoft",
+        "tier": "Premium",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
         "description": "Enables conversion of different data formats from one to another.",
         "display_name": "Converter by Power2Apps",
         "id": "/providers/Microsoft.PowerApps/apis/shared_converterbypower2apps",
@@ -8779,7 +8789,7 @@
         "unblockable": false
       },
       {
-        "description": "Simplifies the steps to retrieve and manage an access token for Pro WFM APIs.",
+        "description": "Simplifies the steps to retrieve and manage an access token for UKG Pro WFM APIs.",
         "display_name": "PRO WFM Authentication",
         "id": "/providers/Microsoft.PowerApps/apis/shared_prowfmauthentication",
         "name": "shared_prowfmauthentication",

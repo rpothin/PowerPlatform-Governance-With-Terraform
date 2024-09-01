@@ -22784,11 +22784,12 @@
           "environment_type": "OnlyEnvironments",
           "environments": [
             "4e6d8452-367f-ed66-9a5c-dfa47988e8f0",
+            "8522332f-75c7-e24c-ad05-9f7e2b89e2f5",
             "bc71e927-ffe8-effa-8666-78c5cfa7bdf4"
           ],
           "id": "940f8b8e-d739-46e7-8938-9a220d6f31fb",
           "last_modified_by": "Raphael Pothin",
-          "last_modified_time": "2024-08-31T01:36:28.0751223Z",
+          "last_modified_time": "2024-08-31T17:26:11.0822761Z",
           "non_business_connectors": [
             {
               "action_rules": [],
@@ -30365,11 +30366,12 @@
           "environment_type": "ExceptEnvironments",
           "environments": [
             "4e6d8452-367f-ed66-9a5c-dfa47988e8f0",
+            "8522332f-75c7-e24c-ad05-9f7e2b89e2f5",
             "bc71e927-ffe8-effa-8666-78c5cfa7bdf4"
           ],
           "id": "af19e406-9396-48eb-8414-63ad0f5a3fa8",
           "last_modified_by": "Raphael Pothin",
-          "last_modified_time": "2024-08-31T01:36:12.3635975Z",
+          "last_modified_time": "2024-08-31T17:26:25.8140719Z",
           "non_business_connectors": [
             {
               "action_rules": [],

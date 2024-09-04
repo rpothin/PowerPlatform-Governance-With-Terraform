@@ -963,7 +963,7 @@
         "display_name": "ArcGIS Enterprise",
         "id": "/providers/Microsoft.PowerApps/apis/shared_arcgisenterprise",
         "name": "shared_arcgisenterprise",
-        "publisher": "Esri Inc.",
+        "publisher": "Esri, Inc.",
         "tier": "Premium",
         "type": "Microsoft.PowerApps/apis",
         "unblockable": false
@@ -1074,6 +1074,16 @@
         "id": "/providers/Microsoft.PowerApps/apis/shared_assistantstudiov2",
         "name": "shared_assistantstudiov2",
         "publisher": "Microsoft",
+        "tier": "Premium",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
+        "description": "The Autenti E-Signature Standard Workflow Connector enables integration with the Autenti platform, offering functionalities related to managing processes of electronic signing of documents within workflows. Connector require additional purchase: https://autenti.com/p-a",
+        "display_name": "Autenti E-Signature Workflow",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_autentiesignaturewor",
+        "name": "shared_autentiesignaturewor",
+        "publisher": "Autenti sp. z o.o.",
         "tier": "Premium",
         "type": "Microsoft.PowerApps/apis",
         "unblockable": false

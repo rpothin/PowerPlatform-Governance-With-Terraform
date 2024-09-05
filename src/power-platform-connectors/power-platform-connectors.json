@@ -6879,6 +6879,16 @@
         "unblockable": true
       },
       {
+        "description": "Creates internal users or invites an external users using Microsoft Graph. The created user can then be added to a group.",
+        "display_name": "Microsoft Graph Add Users (Independent Publisher)",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_microsoftgraphadduse",
+        "name": "shared_microsoftgraphadduse",
+        "publisher": "Troy Taylor",
+        "tier": "Premium",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
         "description": "The Microsoft Graph Security connector helps to connect different Microsoft and partner security products and services, using a unified schema, to streamline security operations, and improve threat protection, detection, and response capabilities. Learn more about integrating with the Microsoft Graph Security API at https://aka.ms/graphsecuritydocs",
         "display_name": "Microsoft Graph Security",
         "id": "/providers/Microsoft.PowerApps/apis/shared_microsoftgraphsecurity",

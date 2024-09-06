@@ -10119,6 +10119,16 @@
         "unblockable": false
       },
       {
+        "description": "The Snowflake Connector provides the ability to surface Snowflake data in Virtual Tables.",
+        "display_name": "Snowflake V2",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_snowflakev2",
+        "name": "shared_snowflakev2",
+        "publisher": "Microsoft",
+        "tier": "Premium",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
         "description": "Sociabble delivers top of the line enterprise social media solutions for employee advocacy, social selling, internal communication and Employee Engagement. Employees are better informed, improve their digital footprint.",
         "display_name": "Sociabble",
         "id": "/providers/Microsoft.PowerApps/apis/shared_sociabble",

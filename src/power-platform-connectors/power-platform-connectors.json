@@ -2749,6 +2749,16 @@
         "unblockable": false
       },
       {
+        "description": "Execute an adaptive action where the AI chooses and organizes the essential actions in response to the input received.",
+        "display_name": "Adaptive actions",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_copilotflow",
+        "name": "shared_copilotflow",
+        "publisher": "Microsoft",
+        "tier": "Premium",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
         "description": "Microsoft Service copilot connector",
         "display_name": "Copilot for Service extension (preview)",
         "id": "/providers/Microsoft.PowerApps/apis/shared_copilotforservice",

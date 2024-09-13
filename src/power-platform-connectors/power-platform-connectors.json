@@ -8929,6 +8929,26 @@
         "unblockable": false
       },
       {
+        "description": "This connector streamlines your RamQuest title production software solution processes, whether CCE or Horizon, by offering a suite of actions which can be performed from order retrieval and creation to document and task management.",
+        "display_name": "RamQuest Actions",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_ramquestactions",
+        "name": "shared_ramquestactions",
+        "publisher": "RamQuest Software, Inc",
+        "tier": "Premium",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
+        "description": "This connector contains triggers which respond to events enabled within RamQuest title production software solutions including CCE and Horizon.",
+        "display_name": "RamQuest Events",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_ramquestevents",
+        "name": "shared_ramquestevents",
+        "publisher": "RamQuest Software, Inc",
+        "tier": "Premium",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
         "description": "RAPID Platform enables the creation of customised application for your business by allowing you to capture data, run workflows and create Power BI Dashboards. With the RAPID Platform connector you can unlock hundreds of integrations as well as more automation options to take your RAPID solution to the next level.",
         "display_name": "RAPID Platform",
         "id": "/providers/Microsoft.PowerApps/apis/shared_rapidplatform",

@@ -5503,7 +5503,7 @@
         "display_name": "iManage Work for Admins",
         "id": "/providers/Microsoft.PowerApps/apis/shared_imanageworkforadmins",
         "name": "shared_imanageworkforadmins",
-        "publisher": "iManage LLC",
+        "publisher": "iManage Power Platform Connector",
         "tier": "Premium",
         "type": "Microsoft.PowerApps/apis",
         "unblockable": false
@@ -10159,8 +10159,8 @@
         "unblockable": false
       },
       {
-        "description": "The Snowflake Connector provides the ability to surface Snowflake data in Virtual Tables.",
-        "display_name": "Snowflake V2",
+        "description": "The Snowflake Connector provides the ability to surface Snowflake data in Virtual Tables. This connector is in private preview. For enquiries, contact snowflake.connector@service.microsoft.com",
+        "display_name": "Snowflake Tabular",
         "id": "/providers/Microsoft.PowerApps/apis/shared_snowflakev2",
         "name": "shared_snowflakev2",
         "publisher": "Microsoft",

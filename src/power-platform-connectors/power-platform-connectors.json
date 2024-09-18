@@ -1059,6 +1059,16 @@
         "unblockable": false
       },
       {
+        "description": "Enrich a workflow with SMS for notifications, appointment reminders, IT and facility management alerts, 2FA, packet tracking, marketing and more. Service for companies of all types and sizes for internal or external communication. \nAn SMS is clear \u0026 uncomplicated - no app, no login, no training required! The message takes centre stage...an SMS stands out and is read 98% of the time. That's why SMS is the preferred method for important \u0026 urgent information.",
+        "display_name": "ASPSMS",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_aspsms",
+        "name": "shared_aspsms",
+        "publisher": "Vadian .Net AG",
+        "tier": "Premium",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
         "description": "Assently E-Sign is a premium SaaS for e-signatures and smart contracts allowing full digitalization for your document workflows.",
         "display_name": "Assently E-Sign",
         "id": "/providers/Microsoft.PowerApps/apis/shared_assentlyesign",
@@ -1094,6 +1104,16 @@
         "id": "/providers/Microsoft.PowerApps/apis/shared_autodeskforgedataexc",
         "name": "shared_autodeskforgedataexc",
         "publisher": "Autodesk Inc.",
+        "tier": "Premium",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
+        "description": "Auto Code Review your flows. Use My flow action or Dataverse workflows table (must json the clientData field). Export either raw json or following export files: Review - Code Review of flow, with score, errors and warnings Report - All variables, actions and connections Diagram - Visual representation of the flow",
+        "display_name": "AutoReview",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_autoreview",
+        "name": "shared_autoreview",
+        "publisher": "Power DevBox",
         "tier": "Premium",
         "type": "Microsoft.PowerApps/apis",
         "unblockable": false

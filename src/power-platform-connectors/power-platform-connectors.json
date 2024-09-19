@@ -2719,6 +2719,16 @@
         "unblockable": false
       },
       {
+        "description": "The Consumer Financial Protection Bureau, a U.S. government agency, ensures fair treatment by financial institutions. The Consumer Complaint Database collects and publishes complaints about financial products and services after company responses, confirmations, or 15 days. Complaints referred to other regulators, like those about institutions with assets under $10 billion, are not published. The database updates daily.",
+        "display_name": "Consumer Complaints (Independent Publisher)",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_consumercomplaints",
+        "name": "shared_consumercomplaints",
+        "publisher": "Richard Wilson",
+        "tier": "Premium",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
         "description": "Contacts Pro is an advanced contacts management app for Microsoft Teams. This connector will allow you to manage existing contacts or create new ones.",
         "display_name": "Contacts Pro",
         "id": "/providers/Microsoft.PowerApps/apis/shared_contactspro",
@@ -2764,16 +2774,6 @@
         "id": "/providers/Microsoft.PowerApps/apis/shared_convertkitip",
         "name": "shared_convertkitip",
         "publisher": "Troy Taylor, Hitachi Solutions",
-        "tier": "Premium",
-        "type": "Microsoft.PowerApps/apis",
-        "unblockable": false
-      },
-      {
-        "description": "Execute an adaptive action where the AI chooses and organizes the essential actions in response to the input received.",
-        "display_name": "Adaptive actions",
-        "id": "/providers/Microsoft.PowerApps/apis/shared_copilotflow",
-        "name": "shared_copilotflow",
-        "publisher": "Microsoft",
         "tier": "Premium",
         "type": "Microsoft.PowerApps/apis",
         "unblockable": false
@@ -3969,6 +3969,16 @@
         "unblockable": false
       },
       {
+        "description": "Enveloop is a high-visibility content management UI \u0026 editor for all your email and text messaging. Not only can you create and manage all your email message designs in Enveloop, you can do the same for all your SMS / MMS messages and send those from Enveloop as well. Enveloop includes useful templates to get started fast. Plus, with one-click test messaging, a powerful sandbox environment, and all types of  code snippets included, sending your messages is practically effortless!",
+        "display_name": "Enveloop (Independent Publisher)",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_enveloop",
+        "name": "shared_enveloop",
+        "publisher": "Troy Taylor",
+        "tier": "Premium",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
         "description": "An Envoy connector that allows you to be able to connect your Envoy account (our REST API endpoints) to any other connectors. An example would be to create bulk invites in Envoy with details from a Microsoft Excel Online spreadsheet.",
         "display_name": "Envoy",
         "id": "/providers/Microsoft.PowerApps/apis/shared_envoy",
@@ -4314,6 +4324,16 @@
         "id": "/providers/Microsoft.PowerApps/apis/shared_financialconductauth",
         "name": "shared_financialconductauth",
         "publisher": "Gulshan Khurana",
+        "tier": "Premium",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
+        "description": "Blackbaud Financial Edge NXT is a comprehensive cloud-based accounting software solution built specifically for nonprofits. Use the Query connector to manage and execute queries.",
+        "display_name": "Financial Edge NXT Query",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_financialedgenxtquer",
+        "name": "shared_financialedgenxtquer",
+        "publisher": "Blackbaud. Inc",
         "tier": "Premium",
         "type": "Microsoft.PowerApps/apis",
         "unblockable": false
@@ -12333,6 +12353,16 @@
         "display_name": "Zenler (Independent Publisher)",
         "id": "/providers/Microsoft.PowerApps/apis/shared_zenlerip",
         "name": "shared_zenlerip",
+        "publisher": "Troy Taylor",
+        "tier": "Premium",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
+        "description": "Zenlogin handles automating suspicious login detection to keep your authentication secure, so you can focus on your business. We don't store any Personally Identifiable Information (PII) on our servers by default. Emails are all handled by Postmark and they're as secure as it gets.",
+        "display_name": "Zenlogin (Independent Publisher)",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_zenlogin",
+        "name": "shared_zenlogin",
         "publisher": "Troy Taylor",
         "tier": "Premium",
         "type": "Microsoft.PowerApps/apis",

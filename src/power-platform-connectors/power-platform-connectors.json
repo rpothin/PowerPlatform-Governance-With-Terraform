@@ -1069,6 +1069,16 @@
         "unblockable": false
       },
       {
+        "description": "Transcribe and extract data from audio using AssemblyAI's Speech AI.",
+        "display_name": "AssemblyAI",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_assemblyai",
+        "name": "shared_assemblyai",
+        "publisher": "AssemblyAI",
+        "tier": "Premium",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
         "description": "Assently E-Sign is a premium SaaS for e-signatures and smart contracts allowing full digitalization for your document workflows.",
         "display_name": "Assently E-Sign",
         "id": "/providers/Microsoft.PowerApps/apis/shared_assentlyesign",
@@ -10403,7 +10413,7 @@
         "display_name": "Staffbase",
         "id": "/providers/Microsoft.PowerApps/apis/shared_staffbase",
         "name": "shared_staffbase",
-        "publisher": "Staffbase",
+        "publisher": "Staffbase GmbH",
         "tier": "Premium",
         "type": "Microsoft.PowerApps/apis",
         "unblockable": false
@@ -11163,7 +11173,7 @@
         "display_name": "Tribal - Maytas",
         "id": "/providers/Microsoft.PowerApps/apis/shared_tribalmaytas",
         "name": "shared_tribalmaytas",
-        "publisher": "Michael Szymanski",
+        "publisher": "Tribal Group",
         "tier": "Premium",
         "type": "Microsoft.PowerApps/apis",
         "unblockable": false

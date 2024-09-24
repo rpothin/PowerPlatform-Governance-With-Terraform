@@ -1729,6 +1729,16 @@
         "unblockable": false
       },
       {
+        "description": "Blackbaud Raiser's Edge NXT is a comprehensive cloud-based fundraising and donor management software solution built specifically for nonprofits and the entire social good community. Use the Query connector to manage and execute queries.",
+        "display_name": "Blackbaud RENXT Query",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_blackbaudrenxtquery",
+        "name": "shared_blackbaudrenxtquery",
+        "publisher": "Blackbaud. Inc",
+        "tier": "Premium",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
         "description": "Use the SKY Add-ins connector to validate user identity tokens issued by the Blackbaud Host application.",
         "display_name": "Blackbaud SKY Add-ins",
         "id": "/providers/Microsoft.PowerApps/apis/shared_blackbaudskyaddins",

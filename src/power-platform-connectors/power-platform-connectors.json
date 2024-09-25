@@ -11019,6 +11019,16 @@
         "unblockable": false
       },
       {
+        "description": "This interface allows users to integrate Timeneye's time tracking and management capabilities with various applications and services in the Microsoft ecosystem. By leveraging this interface, users can automate workflows, synchronize time tracking data, and enhance productivity through seamless integration with other tools.",
+        "display_name": "Timeneye",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_timeneye",
+        "name": "shared_timeneye",
+        "publisher": "DM Digital Software SRL",
+        "tier": "Premium",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
         "description": "TLDR helps you summarize any piece of text into concise, easy to digest content so you can free yourself from information overload. Summarize any URL or text using state-of-the-art abstractive and extractive summarization models.",
         "display_name": "TLDR",
         "id": "/providers/Microsoft.PowerApps/apis/shared_tldrip",

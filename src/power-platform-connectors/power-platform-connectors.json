@@ -779,6 +779,16 @@
         "unblockable": false
       },
       {
+        "description": "The connector enables security and IT teams to streamline their operations by incorporating [ANY.RUN's](http://any.run/) **threat intelligence** capabilities into both manual and automated workflows with applications such as Defender for Endpoint and Sentinel.\n",
+        "display_name": "ANY.RUN Threat Intelligence",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_anyrunthreatintellig",
+        "name": "shared_anyrunthreatintellig",
+        "publisher": "ANYRUN FZCO",
+        "tier": "Premium",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
         "description": "With the APITemplate.io service, you can create PDF documents and images, and manage your templates. Generate social media images, banners or PDFs from reusable templates with no coding!",
         "display_name": "APITemplate (Independent Publisher)",
         "id": "/providers/Microsoft.PowerApps/apis/shared_apitemplateip",

@@ -3959,10 +3959,100 @@
         "unblockable": false
       },
       {
+        "description": "Create and read barcodes / QR codes from multiple file formats",
+        "display_name": "Encodian - Barcode",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_encodianbarcode",
+        "name": "shared_encodianbarcode",
+        "publisher": "Encodian",
+        "tier": "Standard",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
+        "description": "Convert 70+ file formats to new file formats",
+        "display_name": "Encodian - Convert",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_encodianconvert",
+        "name": "shared_encodianconvert",
+        "publisher": "Encodian",
+        "tier": "Standard",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
         "description": "Enhanced document format conversion, OCR, watermarking, data extraction, redaction + much more. ",
         "display_name": "Encodian",
         "id": "/providers/Microsoft.PowerApps/apis/shared_encodiandocumentmanager",
         "name": "shared_encodiandocumentmanager",
+        "publisher": "Encodian",
+        "tier": "Standard",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
+        "description": "Extensive features for the manipulation and creation of Excel and CSV file formats",
+        "display_name": "Encodian - Excel",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_encodianexcel",
+        "name": "shared_encodianexcel",
+        "publisher": "Encodian",
+        "tier": "Standard",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
+        "description": "A collection of features for retrieving and sending data to Encodian Filer",
+        "display_name": "Encodian Filer",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_encodianfiler",
+        "name": "shared_encodianfiler",
+        "publisher": "Encodian",
+        "tier": "Standard",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
+        "description": "A collection of features covering AI, Archives (ZIP), Email + more",
+        "display_name": "Encodian - General",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_encodiangeneral",
+        "name": "shared_encodiangeneral",
+        "publisher": "Encodian",
+        "tier": "Standard",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
+        "description": "Extensive features for the manipulation and conversion of image file formats",
+        "display_name": "Encodian - Image",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_encodianimage",
+        "name": "shared_encodianimage",
+        "publisher": "Encodian",
+        "tier": "Standard",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
+        "description": "Extensive features for the manipulation and creation of PDF documents",
+        "display_name": "Encodian - PDF",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_encodianpdf",
+        "name": "shared_encodianpdf",
+        "publisher": "Encodian",
+        "tier": "Standard",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
+        "description": "Invoke Encodian Trigr from SharePoint Online (Manual / Automated) and other platforms",
+        "display_name": "Encodian Trigr",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_encodiantrigr",
+        "name": "shared_encodiantrigr",
+        "publisher": "Encodian",
+        "tier": "Standard",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
+        "description": "Extensive collection of features covering security, array manipulation, data validation + more",
+        "display_name": "Encodian - Utilities",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_encodianutilities",
+        "name": "shared_encodianutilities",
         "publisher": "Encodian",
         "tier": "Standard",
         "type": "Microsoft.PowerApps/apis",
@@ -8543,7 +8633,7 @@
         "display_name": "Plumsail Documents",
         "id": "/providers/Microsoft.PowerApps/apis/shared_plumsail",
         "name": "shared_plumsail",
-        "publisher": "Plumsail Inc",
+        "publisher": "Plumsail",
         "tier": "Standard",
         "type": "Microsoft.PowerApps/apis",
         "unblockable": false
@@ -11203,6 +11293,16 @@
         "display_name": "Tribal - Maytas",
         "id": "/providers/Microsoft.PowerApps/apis/shared_tribalmaytas",
         "name": "shared_tribalmaytas",
+        "publisher": "Tribal Group",
+        "tier": "Premium",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
+        "description": "Streamline the day-to-day administration of student management to enhance student experience",
+        "display_name": "Tribal - SITS",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_tribalsits",
+        "name": "shared_tribalsits",
         "publisher": "Tribal Group",
         "tier": "Premium",
         "type": "Microsoft.PowerApps/apis",

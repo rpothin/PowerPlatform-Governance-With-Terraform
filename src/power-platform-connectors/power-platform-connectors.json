@@ -639,6 +639,16 @@
         "unblockable": false
       },
       {
+        "description": "Integrate your QMS with your ERP, MES, PLM, instruments, sensors or website using AlisQI's connectivity tools.",
+        "display_name": "AlisQI",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_alisqi",
+        "name": "shared_alisqi",
+        "publisher": "AlisQI BV",
+        "tier": "Premium",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
         "description": "Alkymi transforms enterprise workflows by placing machine learning and automation technology into the hands of business users, turning operational data headaches into a source of efficiency. Alkymi’s core products—Data Inbox and Patterns—allow businesses to extract, analyze, and take action on critical business data in emails and documents.The Alkymi connector allows you to easily access the data extracted from unstructured documents processed by the Alkymi app.",
         "display_name": "Alkymi",
         "id": "/providers/Microsoft.PowerApps/apis/shared_alkymi",
@@ -1679,6 +1689,16 @@
         "unblockable": false
       },
       {
+        "description": "Blackbaud Financial Edge NXT is a comprehensive cloud-based accounting software solution built specifically for nonprofits. Use the Query connector to manage and execute queries.",
+        "display_name": "Blackbaud FENXT Query",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_blackbaudfenxtquery",
+        "name": "shared_blackbaudfenxtquery",
+        "publisher": "Blackbaud. Inc",
+        "tier": "Premium",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
         "description": "Blackbaud Raiser's Edge NXT is a comprehensive cloud-based fundraising and donor management software solution built specifically for nonprofits and the entire social good community. Use the Fundraising connector to manage campaigns, funds, appeals, and packages.",
         "display_name": "Blackbaud Raisers Edge NXT Fundraising",
         "id": "/providers/Microsoft.PowerApps/apis/shared_blackbaudfundraising",
@@ -2660,7 +2680,7 @@
       },
       {
         "description": "Provides access to the environment database in Microsoft Dataverse.",
-        "display_name": "Microsoft Dataverse (legacy)",
+        "display_name": "Microsoft Dataverse",
         "id": "/providers/Microsoft.PowerApps/apis/shared_commondataservice",
         "name": "shared_commondataservice",
         "publisher": "Microsoft",
@@ -8229,6 +8249,16 @@
         "unblockable": false
       },
       {
+        "description": "Pappers International allows you to retrieve information and documents on European companies through their registration number in the appropriate commercial register.",
+        "display_name": "Pappers (Independent Publisher)",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_pappers",
+        "name": "shared_pappers",
+        "publisher": "Troy Taylor",
+        "tier": "Premium",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
         "description": "Ministry Brands ParishSOFT Family Suite is an integrated church management software solution that gives you access to everything you need for your ministry to run smoothly.  Pastors, staff, and parish administrators can streamline the behind-the-scenes administrative work.  Rather than having a different software or online platform for membership, online giving, communications, and volunteer management, Ministry Brands ParishSOFT Family Suite cohesively ties all the tasks into one system.",
         "display_name": "ParishSoft Family Suite",
         "id": "/providers/Microsoft.PowerApps/apis/shared_parishsoftfamilysuit",
@@ -11639,6 +11669,16 @@
         "unblockable": false
       },
       {
+        "description": "USAJOBS.gov is the Federal Government's official job board, providing free access to thousands of job opportunities across hundreds of federal agencies and organizations. As the primary source for federal job listings, applications, and employment opportunity information, USAJOBS.gov offers a diverse range of positions to job seekers. With over 17 million users, it helps connect candidates with federal careers, ensuring fair and equal opportunity in the hiring process.",
+        "display_name": "USAJOBS (Independent Publisher)",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_usajobs",
+        "name": "shared_usajobs",
+        "publisher": "Richard Wilson",
+        "tier": "Premium",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
         "description": "Universal Synch Bridge for SAP: One access point for all SAP integration, analytics and UI needs. Simplify modern analytics, apps and automations. Provision SAP data, insights and automation On-demand.",
         "display_name": "USB4SAP",
         "id": "/providers/Microsoft.PowerApps/apis/shared_usb4sap",
@@ -11970,7 +12010,7 @@
       },
       {
         "description": "Use the HTTP connector to fetch resources from various Web services, authenticated by Microsoft Entra ID, or from an on-premise web service.",
-        "display_name": "HTTP With Microsoft Entra ID (deprecated)",
+        "display_name": "HTTP With Microsoft Entra ID",
         "id": "/providers/Microsoft.PowerApps/apis/shared_webcontentsv2",
         "name": "shared_webcontentsv2",
         "publisher": "Microsoft",

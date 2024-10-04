@@ -5089,6 +5089,16 @@
         "unblockable": false
       },
       {
+        "description": "This program helps government agencies understand how people find, access, and use government services online. The program does not track individuals and anonymizes the IP addresses of visitors.",
+        "display_name": "GSA Analytics (Independent Publisher)",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_gsaanalytics",
+        "name": "shared_gsaanalytics",
+        "publisher": "Richard Wilson",
+        "tier": "Premium",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
         "description": "Per diem rates are the allowed reimbursement rates for hotel stays and meals for federal travelers. Rates are set for each of the federal government's fiscal years (October 1st to September 30th) GSA is responsible for setting the rates in the continental United States. Many businesses and other organizations adopt these rates as well. This API provides access to the current rate information.",
         "display_name": "GSA Per Diem (Independent Publisher)",
         "id": "/providers/Microsoft.PowerApps/apis/shared_gsaperdiem",

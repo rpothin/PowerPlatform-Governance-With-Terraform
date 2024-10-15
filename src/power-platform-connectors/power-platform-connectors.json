@@ -2829,6 +2829,16 @@
         "unblockable": false
       },
       {
+        "description": "Execute a generative action where the AI chooses and organizes the essential actions in response to the input received.",
+        "display_name": "Generative actions",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_copilotflow",
+        "name": "shared_copilotflow",
+        "publisher": "Microsoft",
+        "tier": "Premium",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
         "description": "Microsoft Service copilot connector",
         "display_name": "Copilot for Service extension (preview)",
         "id": "/providers/Microsoft.PowerApps/apis/shared_copilotforservice",
@@ -5194,6 +5204,16 @@
         "id": "/providers/Microsoft.PowerApps/apis/shared_highgearworkflow",
         "name": "shared_highgearworkflow",
         "publisher": "HighGear Software, Inc.",
+        "tier": "Premium",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
+        "description": "Highspot Content Management and Digital Sales Rooms for Sales Copilot",
+        "display_name": "Highspot",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_highspotforsalescopi",
+        "name": "shared_highspotforsalescopi",
+        "publisher": "Highspot",
         "tier": "Premium",
         "type": "Microsoft.PowerApps/apis",
         "unblockable": false
@@ -8949,8 +8969,8 @@
         "unblockable": false
       },
       {
-        "description": "Project Roadmap Connector",
-        "display_name": "Project Roadmap",
+        "description": "Portfolio and Roadmap Connector",
+        "display_name": "Portfolio and Roadmap",
         "id": "/providers/Microsoft.PowerApps/apis/shared_projectroadmap",
         "name": "shared_projectroadmap",
         "publisher": "Microsoft",

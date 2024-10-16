@@ -12159,6 +12159,16 @@
         "unblockable": false
       },
       {
+        "description": "This connector provides access to various services of the Washington Metropolitan Area Transit Authority (WMATA).",
+        "display_name": "WMATA (Independent Publisher)",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_wmata",
+        "name": "shared_wmata",
+        "publisher": "Richard Wilson, Daniel Cox",
+        "tier": "Premium",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
         "description": "WooCommerce is a free, open-source commerce platform for WordPress. It empowers anyone, anywhere, to sell anything – with unlimited extensibility, flexibility, and control.",
         "display_name": "WooCommerce",
         "id": "/providers/Microsoft.PowerApps/apis/shared_woocommerce",

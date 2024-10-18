@@ -16777,6 +16777,12 @@
               "action_rules": [],
               "default_action_rule_behavior": "",
               "endpoint_rules": [],
+              "id": "/providers/Microsoft.PowerApps/apis/shared_copilotflow"
+            },
+            {
+              "action_rules": [],
+              "default_action_rule_behavior": "",
+              "endpoint_rules": [],
               "id": "/providers/Microsoft.PowerApps/apis/shared_copyaiip"
             },
             {
@@ -18200,6 +18206,12 @@
               "default_action_rule_behavior": "",
               "endpoint_rules": [],
               "id": "/providers/Microsoft.PowerApps/apis/shared_highgearworkflow"
+            },
+            {
+              "action_rules": [],
+              "default_action_rule_behavior": "",
+              "endpoint_rules": [],
+              "id": "/providers/Microsoft.PowerApps/apis/shared_highspotforsalescopi"
             },
             {
               "action_rules": [],
@@ -22297,6 +22309,12 @@
               "action_rules": [],
               "default_action_rule_behavior": "",
               "endpoint_rules": [],
+              "id": "/providers/Microsoft.PowerApps/apis/shared_wmata"
+            },
+            {
+              "action_rules": [],
+              "default_action_rule_behavior": "",
+              "endpoint_rules": [],
               "id": "/providers/Microsoft.PowerApps/apis/shared_woocommerce"
             },
             {
@@ -22603,12 +22621,6 @@
               "action_rules": [],
               "default_action_rule_behavior": "",
               "endpoint_rules": [],
-              "id": "Http"
-            },
-            {
-              "action_rules": [],
-              "default_action_rule_behavior": "",
-              "endpoint_rules": [],
               "id": "HttpRequestReceived"
             },
             {
@@ -22893,6 +22905,12 @@
               "action_rules": [],
               "default_action_rule_behavior": "",
               "endpoint_rules": [],
+              "id": "Http"
+            },
+            {
+              "action_rules": [],
+              "default_action_rule_behavior": "",
+              "endpoint_rules": [],
               "id": "PvaAuth"
             },
             {
@@ -22943,7 +22961,7 @@
           ],
           "id": "53536e59-fc07-485e-a8b2-ec28e38bc780",
           "last_modified_by": "Raphael Pothin",
-          "last_modified_time": "2024-10-08T14:14:17.2046592Z",
+          "last_modified_time": "2024-10-17T15:16:37.3005718Z",
           "non_business_connectors": [
             {
               "action_rules": [],

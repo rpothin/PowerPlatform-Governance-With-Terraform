@@ -3443,7 +3443,7 @@
         "display_name": "Document Drafter",
         "id": "/providers/Microsoft.PowerApps/apis/shared_documentdrafter",
         "name": "shared_documentdrafter",
-        "publisher": "Document Drafter",
+        "publisher": "Green Meadow ApS",
         "tier": "Premium",
         "type": "Microsoft.PowerApps/apis",
         "unblockable": false
@@ -3863,7 +3863,7 @@
         "display_name": "Egnyte",
         "id": "/providers/Microsoft.PowerApps/apis/shared_egnyte",
         "name": "shared_egnyte",
-        "publisher": "Egnyte, Inc.",
+        "publisher": "Egnyte",
         "tier": "Premium",
         "type": "Microsoft.PowerApps/apis",
         "unblockable": false
@@ -4069,6 +4069,16 @@
         "unblockable": false
       },
       {
+        "description": "Extensive features for the manipulation and creation of PowerPoint file formats",
+        "display_name": "Encodian - PowerPoint",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_encodianpowerpoint",
+        "name": "shared_encodianpowerpoint",
+        "publisher": "Encodian",
+        "tier": "Premium",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
         "description": "Invoke Encodian Trigr from SharePoint Online (Manual / Automated) and other platforms",
         "display_name": "Encodian Trigr",
         "id": "/providers/Microsoft.PowerApps/apis/shared_encodiantrigr",
@@ -4224,6 +4234,16 @@
         "id": "/providers/Microsoft.PowerApps/apis/shared_evocom",
         "name": "shared_evocom",
         "publisher": "Evocom Informationssysteme GmbH",
+        "tier": "Premium",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
+        "description": "Connect to your Exact Online Premium account and get notified when business entities are created or updated.\n\nCurrently supported entities are Sales Orders, Projects, Accounts and Opportunities.\n\nMore entities and events will be added in the future.",
+        "display_name": "Exact Online Premium",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_exactonlinepremium",
+        "name": "shared_exactonlinepremium",
+        "publisher": "Exact MKB Software BV",
         "tier": "Premium",
         "type": "Microsoft.PowerApps/apis",
         "unblockable": false
@@ -6913,7 +6933,7 @@
         "display_name": "Maximizer",
         "id": "/providers/Microsoft.PowerApps/apis/shared_maximizer",
         "name": "shared_maximizer",
-        "publisher": "Maximizer Software Inc.",
+        "publisher": "Maximizer",
         "tier": "Premium",
         "type": "Microsoft.PowerApps/apis",
         "unblockable": false
@@ -10939,11 +10959,11 @@
         "unblockable": false
       },
       {
-        "description": "A fast, simple, and capable service to automate the creation of Office documents based on text, images, documents and tables. More Information: https://www.tendocs.com",
+        "description": "A fast, simple, and smart service to automate the creation of Office documents using AI, text, images, documents and tables. More Information: https://www.tendocs.com",
         "display_name": "Tendocs Documents",
         "id": "/providers/Microsoft.PowerApps/apis/shared_tendocsdocuments",
         "name": "shared_tendocsdocuments",
-        "publisher": "Tendocs",
+        "publisher": "Deepdale BV",
         "tier": "Premium",
         "type": "Microsoft.PowerApps/apis",
         "unblockable": false
@@ -11340,7 +11360,7 @@
       },
       {
         "description": "Tribal Edge modules, such as Tribal Admissions, provide staff and students the tools they need to succeed in the world of education. Connect to Tribal Edge modules using the Tribal Connector to manage information, create clearance checks for applications, and much more.",
-        "display_name": "Tribal",
+        "display_name": "Tribal - Admissions",
         "id": "/providers/Microsoft.PowerApps/apis/shared_tribal",
         "name": "shared_tribal",
         "publisher": "Tribal Group",

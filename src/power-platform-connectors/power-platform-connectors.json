@@ -7079,6 +7079,16 @@
         "unblockable": false
       },
       {
+        "description": "Microsoft Copilot Studio used to discover and trigger agents",
+        "display_name": "Microsoft Copilot Studio",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_microsoftcopilotstudio",
+        "name": "shared_microsoftcopilotstudio",
+        "publisher": "Microsoft",
+        "tier": "Premium",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
         "description": "Microsoft Dynamics 365 CE v9 Web API for interacting with on-premises D365 CE data from cloud D365 CE",
         "display_name": "Microsoft D365CE v9 OnPrem (Independent Publisher)",
         "id": "/providers/Microsoft.PowerApps/apis/shared_microsoftd365cev9ip",

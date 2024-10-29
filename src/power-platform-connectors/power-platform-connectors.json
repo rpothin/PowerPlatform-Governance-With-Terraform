@@ -3109,6 +3109,16 @@
         "unblockable": false
       },
       {
+        "description": "Databook C4S connects with Microsoft Copilot for Sales to provide crucial insights in the Key Sales Info panel within Microsoft Outlook, including strategic priorities, key decision periods, and financial cases for change. It also integrates into the Chat experience of Microsoft Copilot for Sales, enabling users to get help with meeting preparation and receive suggested opportunities for their accounts, boosting sales effectiveness.",
+        "display_name": "Databook C4S",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_databookc4s",
+        "name": "shared_databookc4s",
+        "publisher": "Databook Labs, Inc.",
+        "tier": "Premium",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
         "description": "Build dashboards and track performance from everywhere. Connect your data from any tool and track it from any device.",
         "display_name": "Databox (Independent Publisher)",
         "id": "/providers/Microsoft.PowerApps/apis/shared_databoxip",
@@ -3189,6 +3199,16 @@
         "unblockable": false
       },
       {
+        "description": "The ultimate tool to sign digitally. Sign documents digitally with DeepSign and speed up any agreement.",
+        "display_name": "DeepBox Sign",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_deepboxsign",
+        "name": "shared_deepboxsign",
+        "publisher": "DeepCloud",
+        "tier": "Premium",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
         "description": "Deepgram has language AI models to power your apps. Power your apps with world-class speech-to-text and domain-specific language models (DSLMs).",
         "display_name": "Deepgram (Independent Publisher)",
         "id": "/providers/Microsoft.PowerApps/apis/shared_deepgram",
@@ -3229,7 +3249,7 @@
         "unblockable": false
       },
       {
-        "description": "Desk365 is a cloud-based modern helpdesk for the Microsoft 365 workplace that lets you deliver outstanding customer service through channels like Microsoft Teams, Email, Web Forms/Widgets and more. Automate repetitive work and save time with Desk365’s intuitive, feature-rich web app that comes with a unified inbox to manage all your customer conversations.",
+        "description": "Desk365 is a cloud-based, AI-enhanced helpdesk built for the Microsoft 365 ecosystem, enabling exceptional customer service through Microsoft Teams, Email, Web Forms/Widgets, and more. Automate routine tasks and save time with an intuitive, feature-packed web app that features a unified inbox to manage all customer interactions. Desk365 also integrates Artificial Intelligence to draft agent responses and employs Microsoft Copilot, enhancing seamless collaboration on customer service tickets.",
         "display_name": "Desk365",
         "id": "/providers/Microsoft.PowerApps/apis/shared_desk365",
         "name": "shared_desk365",
@@ -3304,6 +3324,16 @@
         "id": "/providers/Microsoft.PowerApps/apis/shared_digidatesip",
         "name": "shared_digidatesip",
         "publisher": "Troy Taylor",
+        "tier": "Premium",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
+        "description": "Visual management tool supporting improvement processes for teams and enterprise",
+        "display_name": "DigiLEAN Connect",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_digileanconnect",
+        "name": "shared_digileanconnect",
+        "publisher": "DigiLEAN AS",
         "tier": "Premium",
         "type": "Microsoft.PowerApps/apis",
         "unblockable": false
@@ -3499,7 +3529,7 @@
         "unblockable": false
       },
       {
-        "description": "Docusign enables organizations to create, commit to and manage their agreements across the entire agreement lifecycle. The Docusign Demo connector connects only to Docusign demo environments but offers the same functionality as the production DocuSign connector. Any agreements in a Docusign demo environment are not legally binding. For all non-demo uses, use the production Docusign connector.",
+        "description": "Docusign enables organizations to create, commit to and manage their agreements across the entire agreement lifecycle. Customers can accelerate revenue, reduce risk and unlock value from the agreements that run their business. The Docusign Demo connector connects only to Docusign demo environments but offers the same functionality as the production DocuSign connector. Any agreements in a Docusign demo environment are not legally binding.",
         "display_name": "Docusign Demo",
         "id": "/providers/Microsoft.PowerApps/apis/shared_docusigndemo",
         "name": "shared_docusigndemo",
@@ -8423,7 +8453,7 @@
         "display_name": "PDF4me",
         "id": "/providers/Microsoft.PowerApps/apis/shared_pdf4me",
         "name": "shared_pdf4me",
-        "publisher": "Ynoox",
+        "publisher": "Ynoox GmbH",
         "tier": "Premium",
         "type": "Microsoft.PowerApps/apis",
         "unblockable": false
@@ -9134,6 +9164,16 @@
         "id": "/providers/Microsoft.PowerApps/apis/shared_pushoverip",
         "name": "shared_pushoverip",
         "publisher": "Glen Hutson",
+        "tier": "Premium",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
+        "description": "Qdrant (read: quadrant ) is a vector similarity search engine. It provides a production-ready service with a convenient API to store, search, and manage vectors with additional payload and extended filtering support. It makes it useful for all sorts of neural network or semantic-based matching, faceted search, and other applications.",
+        "display_name": "Qdrant (Independent Publisher)",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_qdrant",
+        "name": "shared_qdrant",
+        "publisher": "Anush",
         "tier": "Premium",
         "type": "Microsoft.PowerApps/apis",
         "unblockable": false

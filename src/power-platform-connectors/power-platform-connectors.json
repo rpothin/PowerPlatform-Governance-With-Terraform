@@ -1829,6 +1829,16 @@
         "unblockable": false
       },
       {
+        "description": "BoldSign is a secure, easy-to-use electronic signature solution that provides legally binding ways to send, sign, and manage documents.",
+        "display_name": "BoldSign",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_boldsign",
+        "name": "shared_boldsign",
+        "publisher": "Syncfusion-Inc",
+        "tier": "Premium",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
         "description": "'Intelligent' global 2-way, Email, Voice, SMS and Push Messaging. Supercharge any Power Platform applications with boomapp connect to build truly automated multi-channel conversational communications workflows (uniquely driven by subject). Fully interactive comms workflows based on a recipient’s response allows the delivery of seamless and frictionless interactions without forcing behavioural change through the engagement. For further detail and to set up a free trial account, see our website.",
         "display_name": "boomapp connect",
         "id": "/providers/Microsoft.PowerApps/apis/shared_boomappconnect",
@@ -4125,6 +4135,16 @@
         "name": "shared_encodianutilities",
         "publisher": "Encodian",
         "tier": "Standard",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
+        "description": "Extensive features for the manipulation and creation of Word file formats",
+        "display_name": "Encodian - Word",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_encodianword",
+        "name": "shared_encodianword",
+        "publisher": "Encodian",
+        "tier": "Premium",
         "type": "Microsoft.PowerApps/apis",
         "unblockable": false
       },
@@ -8295,6 +8315,16 @@
         "name": "shared_outlooktasks",
         "publisher": "Microsoft",
         "tier": "Standard",
+        "type": "Microsoft.PowerApps/apis",
+        "unblockable": false
+      },
+      {
+        "description": "Bring critical insights from engagements \u0026 conversations for a deal in the flow of work for the reps. Sellers access these insights within Outlook, Teams and other communication apps to drive better engagement with the stakeholders and close deals faster.",
+        "display_name": "Outreach Insights",
+        "id": "/providers/Microsoft.PowerApps/apis/shared_outreachinsights",
+        "name": "shared_outreachinsights",
+        "publisher": "Outreach",
+        "tier": "Premium",
         "type": "Microsoft.PowerApps/apis",
         "unblockable": false
       },
